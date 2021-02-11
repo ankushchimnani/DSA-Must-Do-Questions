@@ -1,4 +1,4 @@
-## **Print all permutations of an Array**
+## **N-Queens**
 The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
 __Note__: Given an integer n, output an arrangement if it's possible to place n queens under the given condition, else output "Not Possible"
 

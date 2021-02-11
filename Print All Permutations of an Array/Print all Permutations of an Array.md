@@ -1,4 +1,4 @@
-## **Print all permutations of an Array**
+## **Print all Permutations of an Array**
 Given an array of distinct integers of size N, the task is to generate and print all permutations of the given array.
 
 #### **Sample Input**
