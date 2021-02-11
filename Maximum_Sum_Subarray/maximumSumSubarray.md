@@ -1,27 +1,21 @@
-# MAXIMUM SUM SUBARRAY
-
+## **MAXIMUM SUM SUBARRAY**
 Given an one dimensional array of size N having both positive and negative integers. Find the sum of subarray such that it has the largest sum among all subarrays.
 
-Input format:
-First line: A single integer denoting the value of N.
-Next line: N single-separated integers denoting the elements of array
+#### **Sample Input**
+	array = [2, -3, 4, -1, -2, 1, 5, -3]
 
-Output format:
-Single integer denoting the value of required maximum sum of subarray.
+#### **Sample Output**
+	Output: 7
 
-Sample input:
-8
+#### **Sample Explanation**
+The subarray → [4, -1, -2, 1, 5] gives sum 7 which is the largest sum among all subarrays. Hence the answer is 7.
 
-2 -3 4 -1 -2 1 5 -3
+#### **Expected Time Complexity**
+__O__(N), where N is the size of the array
 
-Sample output:
-7
+#### **Expected Space Complexity**
+__O__(1), i.e., constant space complexity.
 
-Sample explanation:
-The subarray → 4 -1 -2 1 5 gives sum 7 which is the largest sum among all subarrays. Hence the answer is 7.
-
-## EXPECTED TIME COMPLEXITY : O(N)
-
-EXPECTED SPACE COMPLEXITY : O(1)
-
-CONSTRAINTS : 1 ≤ N ≤ $10^5$
+#### **Constraints**
+	1 <= N <= 100000
+	-100000 <= Array element <= 100000
