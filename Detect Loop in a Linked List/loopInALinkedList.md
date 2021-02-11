@@ -21,5 +21,5 @@ __O__(N), where N is the number of elements in the linked list. Only one travers
 __O__(1). i.e. Constant Space Complexity
 
 #### **Constraints**
-	The number of the nodes in the list is in the range [0, 104].
-	-105 <= Node.val <= 105
+	The number of the nodes in the list is in the range [0, 10^4].
+	-10^5 <= Node.val <= 10^5
