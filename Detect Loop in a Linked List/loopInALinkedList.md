@@ -10,7 +10,7 @@ Refer [this](https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2018/09/L
 	Linked List contains a cycle.
 
 #### **Sample Explanation**
-	There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, position is used here  	     to denote the index of the node that tail's next pointer is connected to. Note that position is not passed as a parameter.
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, position is used here  	    to denote the index of the node that tail's next pointer is connected to. Note that position is not passed as a parameter.
 
 
 #### **Expected Time Complexity**
