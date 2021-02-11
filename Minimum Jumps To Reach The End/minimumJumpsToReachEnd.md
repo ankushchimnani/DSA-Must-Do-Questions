@@ -25,5 +25,5 @@ __O__(N), where N is the length of the two Strings
 __O__(1). Constant Space Complexity. 
 
 #### **Constraints**
-	1 <= nums.length <= 3 * 104
+	1 <= nums.length <= 3 * 10^4
 	0 <= nums[i] <= 10^5
