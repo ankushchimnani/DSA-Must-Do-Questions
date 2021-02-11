@@ -15,7 +15,9 @@ getMin() — Retrieve the minimum element in the stack in O(1) time
     pop()
     getMin()
 #### **Sample Output**
-	Output: 2
+	Output:     
+	    1
+        3
 #### **Sample Explanation**
     Stack  = [3,5,1]
     getMin() -> 1
