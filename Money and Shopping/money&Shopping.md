@@ -17,7 +17,7 @@ Alice wants to follow her strategy strictly but at the same time she wants to mi
 	52
 
 #### **Sample Explanation**
-Since Alice has to buy atleast one artifact from every shop, and the overall cost has to be minimum, so she buys artifact with cost 1 form the first shop, artifact of cost 50 from the shop, and artifact of cost 1 from the last shop, making the overall cost to be 52.
+Since Alice has to buy atleast one artifact from every shop, and the overall cost has to be minimum, so she buys artifact with cost 1 form the first shop, artifact of cost 50 from the second shop, and artifact of cost 1 from the last shop, making the overall cost to be 52.
 
 #### **Expected Time Complexity**
 __O__(N),where N is the number of shops. 
