@@ -21,4 +21,4 @@ __O__(N), where N is the number elements in the linked list.
 __O__(1), i.e. , constant space complexity.
 
 #### **Constraints**
-	A linked list can be reversed either iteratively or recursively. The task is to implement both the   implementations.
+	A linked list can be reversed either iteratively or recursively. The task is to implement both the implementations.
