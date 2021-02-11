@@ -1,12 +1,12 @@
-## **Binary Representation of a Number**
-Write a program to print Binary representation of a given number. 
+## **Binary Representation to Number**
+Given a binary string, output the integer so formed.
 
+__Note__: Output the number so formed after converting the binary representation to the Integer
 
 #### **Sample Input**
-    N = 7
-
-#### **Sample Output**
     00000000000000000000000000000111
+#### **Sample Output**
+    7
 #### **Sample Explanation**
     Self Explanatory
 #### **Expected Time Complexity**
@@ -15,5 +15,5 @@ __O__(1), constant time complexity
 __O__(1), constant space complexity 
 
 #### **Constraints**
-    0<= N <= (2^32)-1
+    1<= length of binary string <= 32
 
