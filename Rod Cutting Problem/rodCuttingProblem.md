@@ -22,3 +22,6 @@ __O__(N^2),where N is the length of the rod.
 __O__(N), where N is the length of the rod.  
 
 
+#### **Constraints**
+	1 <= N <= 1000
+	1 <= length[i],price[i] <= 100
