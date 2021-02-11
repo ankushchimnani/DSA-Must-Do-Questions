@@ -21,3 +21,9 @@ __O__(N * W). where ‘N’ is the number of weight element and ‘W’ is capac
 
 #### **Expected Space Complexity**
 __O__(N * W), where ‘N’ is the number of weight element and ‘W’ is capacity. 
+
+
+#### **Constraints**
+	1 <= N <= 2000
+	1 <= W <= 2000
+	1 <= value[i],weight[i] <= 1000
