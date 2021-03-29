@@ -1,4 +1,4 @@
-## **Add two numbers represented by a linked list**
+## **Detect Loop in a Linked List**
 
 Given a linked list, check if the linked list has loop or not. Below diagram shows a linked list with a loop.
 Refer [this](https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2018/09/Linked-List-Loop.png?resize=530%2C207&ssl=1) this for better understanding. 
