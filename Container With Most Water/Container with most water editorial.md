@@ -6,11 +6,11 @@
 
 ### Hint
 
-Check efor very pair of array elements to find out the maximum water that can be held. 
+Check for every pair of array elements to find out the maximum water that can be held. 
 
 ### Short Explanation
 
-* For an array A of size N, the maximum water that can be held by array elements A[i] and A[j] = (j – i)* min(A[i],A[j]). Hence for all i,j ( 1 <= i < j <= N ) the maximum water than can be held among all pairs is the required answer.
+* For an array A of size N, the maximum water that can be held between array elements A[i] and A[j] = (j – i)* min(A[i],A[j]). Hence calculating the water containment for all    pairs of i,j ( 1 <= i < j <= N ) and taking the maximum among them will fetch required answer.
 
 ### Detailed Explanation
 
