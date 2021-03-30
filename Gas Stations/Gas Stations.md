@@ -27,5 +27,5 @@ __O__(1), constant space solution
 #### **Constraints**
     gas.length == n
     cost.length == n
-    1 <= n <= 104
-    0 <= gas[i], cost[i] <= 104
+    1 <= n <= 10^4
+    0 <= gas[i], cost[i] <= 10^4
