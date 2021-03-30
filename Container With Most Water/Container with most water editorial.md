@@ -31,9 +31,9 @@ Check for every pair of array elements to find out the maximum water that can be
 
 * Two pointer's approach:
   
-  1. Start with the first and last indices to 1 and N respectively. Check the amount of water that can be contained between A[first] and A[last].
-  2. If the A[first] < A[last], then increase the first index by one else decrease the last index by one.
-  3. Repeat this until the first index is less than last index.
+  1. Take two pinters first and last and assign them to indices 1 and N respectively. Check the amount of water that can be contained between A[first] and A[last].
+  2. If the A[first] < A[last], then increase the first pointer by one else decrease the last pointer by one.
+  3. Repeat this until the first pointer is less than the last pointer .
 
   Why this works?
 
