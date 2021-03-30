@@ -43,40 +43,64 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
 * Example -
  
   Let infix expression I = a+b-c+d*(e-f)/g+(h*(i/j)).
+  
   Let S be the stack required and P be the postfix expression.  ab+c-def-*g/+hij/*+
 
   Scanning I left to right:
 
   First character : a -> S = { }, P = a
+  
   Next character : + -> S = { + }, P = a.
+  
   Next character : b -> S = { + }, P = ab.
+  
   Next character : - -> S = { - }, P = ab+.
+  
   Next character : c -> S = { - }, P = ab+c.
+  
   Next character : + -> S = { + }, P = ab+c-.
+  
   Next character : d -> S = { + }, P = ab+c-d.
+  
   Next character : * -> S = { +* }, P = ab+c-d.
+  
   Next character : ( -> S = { +*( }, P = ab+c-d.
+  
   Next character : e -> S = { +*( }, P = ab+c-de.
+  
   Next character : - -> S = { +*(- }, P = ab+c-de.
+  
   Next character : f -> S = { +*(- }, P = ab+c-def.
+  
   Next character : ) -> S = { +* }, P = ab+c-def-.
+  
   Next character : / -> S = { +/ }, P = ab+c-def-*.
+  
   Next character : g -> S = { +/ }, P = ab+c-def-*g.
+  
   Next character : + -> S = { + }, P = ab+c-def-*g/+.
+  
   Next character : ( -> S = { +( }, P = ab+c-def-*g/+.
+  
   Next character : h -> S = { +( }, P = ab+c-def-*g/+h.
+  
   Next character : * -> S = { +(* }, P = ab+c-def-*g/+h.
+  
   Next character : ( -> S = { +(*( }, P = ab+c-def-*g/+h.
+  
   Next character : i -> S = { +(*( }, P = ab+c-def-*g/+hi.
+  
   Next character : / -> S = { +(*(/ }, P = ab+c-def-*g/+hi.
+  
   Next character : j -> S = { +(*(/ }, P = ab+c-def-*g/+hij.
+  
   Next character : ) -> S = { +(* }, P = ab+c-def-*g/+hij/.
+  
   Next character : ) -> S = { + }, P = ab+c-def-*g/+hij/*.
   
   Pop all from stack hence P = P = ab+c-def-*g/+hij/*+.
   
-    
-  Hence value of D is equal to 7.
+  
 
 ### Time Complexity:
 
