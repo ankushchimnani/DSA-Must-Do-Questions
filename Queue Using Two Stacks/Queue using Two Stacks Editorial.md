@@ -19,7 +19,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   
 * Method 1 : Keeping that oldest entered element at the top of a stack. 
   
-  Let S1, S2 be the required stacks. Let the oldest entered element is always maintained at the top of stack S1. Hence, for the dequeue operation popping the top element of S1 can fetch the the oldest element in no time.
+  Let S1, S2 be the required stacks. Let the oldest entered element is always maintained at the top of stack S1. Hence, for the dequeue operation popping the top element of S1 can fetch the the dequeue the front in no time.
   
   How can we do that?
 
@@ -30,16 +30,16 @@ One stack can be used for enqueue operations, while the other one can be used fo
   2. Push X into S1.
   3. Pop all the elements of S2 one by one, and push them to S1.
   
-  Thus the oldest element is always maintained at the top of S1.
+  Thus, the oldest element is always maintained at the top of S1.
 
 * Method 2 : Keeping that most recent element at the top of a stack. 
   
-  Let S1, S2 be the required stacks. Let the most recent element is to be kept at the top of stack S1. But how can we fetch the oldest element for dequeue operation? 
+  Let S1, S2 be the required stacks. Let the most recent element is to be kept at the top of stack S1. But how can we fetch the front element for dequeue operation? 
 
   Steps to be followed:
 
   1. If any element X is to be enqueued, push it to S1.
-  2. If S2 is empty then, pop all the elements of S1 one by one and push it to S2. The top element of S2 is the oldest element required for dequeue operation.
+  2. If S2 is empty then, pop all the elements of S1 one by one and push it to S2. The top element of S2 is the front element required for dequeue operation.
 
   Since S2 is both filled and emptied in method 1 while S2 is only filled once in method 2, method 2 works faster than method 1.
   
@@ -113,9 +113,9 @@ One stack can be used for enqueue operations, while the other one can be used fo
 
   Query 1: Query type = 1, X = 2. S1 = { 2 }, S2 = { }.
   Query 2: Query type = 1, X = 3. S1 = { 2, 3 }, S2 = { }.
-  Query 3: Query type = 2. S1 = {  }, S2 = { 3, 2}. Dequeued element = 2, hence update S2 = { 3 }.
+  Query 3: Query type = 2. S1 = {  }, S2 = { 3, 2}. Front element = 2, hence update S2 = { 3 }.
   Query 4: Query type = 1, X = 4. S1 = { 4 }, S2 = { 3 }.
-  Query 5: Query type = 2. S1 = { 4 }, S2 = { 3 }. Since S2 is not empty, dequeued element = 3, updated S2 = { }.
+  Query 5: Query type = 2. S1 = { 4 }, S2 = { 3 }. Since S2 is not empty, front element = 3, updated S2 = { }.
   
 
 ### Time Complexity:
