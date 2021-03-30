@@ -1,4 +1,4 @@
-## **Check for palindrome**
+## **Longest Palindromic Substring**
 Given a string of length N. Find the longest substring which is palindrome.
 
 #### **Sample Input**
