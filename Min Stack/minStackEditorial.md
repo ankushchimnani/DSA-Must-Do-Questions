@@ -17,7 +17,7 @@ If A < B then 2A - B < A.
   1. If X >= M, push X into the stack. M remains unchanged.
   2. Else, push 2X - M into the stack. Since X < M, change the value of M to X.
 
-  T be the top element of the stack to be removed, then:
+  Let T be the top element of the stack to be removed, then:
   1. If T >= M, M remains unchanged.
   2. If T < M, then after removing T, value of M changes to 2M-T.
 
@@ -48,7 +48,7 @@ If A < B then 2A - B < A.
      Pushing X inside stack changes the value of M to X.
   
   Also, if T is the top element of stack S, then while poping out T, two situation may arise:
-  1. T >= M.
+  1. T > M.
      Observation:
      Poping out T from stack, will not affect the value of M.
   2. T = M.
@@ -69,12 +69,15 @@ If A < B then 2A - B < A.
   
   Stack S;
   X; // Element to be pushed
+  
   M; // Minimum of stack.
+  
   TOP; // Top of stack
 
   PUSH(X):
 
   if( S is empty ){
+    
     push(X);
     M = X;
   }
@@ -109,10 +112,15 @@ If A < B then 2A - B < A.
   Stack S;
 
   push(3), S = { 3 }, M = 3.
+  
   push(5), 5 > 3, hence push 5, S = { 3, 5 }, M = 3.
+  
   push(1), 1 < 5, hence push 2*1 - 3, S = { 3, 5, -1 }, M = 1.
+  
   getMin(), M = 1.
+  
   pop(), top of stack = -1 and M = 1, 1 > -1 => something unusual, hence pop -1, S = { 3, 5 }, M = 2*1 - (-1) => M = 3.
+  
   getMin(), M = 3.
  
   
