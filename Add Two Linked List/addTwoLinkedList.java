@@ -80,7 +80,6 @@ class Main{
 		Node head1 = generateSinglyLinkedList(arr1);
 		Node head2 = generateSinglyLinkedList(arr2);
 		Node ans = addTwoLinkedList(head1,head2);
-		ans = reverseLinkedList(ans);
 		printList(ans);
 
 	}
