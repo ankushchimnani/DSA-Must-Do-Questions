@@ -54,4 +54,4 @@ class Main{
 		object.pop();
 		System.out.println(object.getMin());
 	}
-}
+}	
