@@ -41,9 +41,9 @@ class Main{
 	//This function finds the frequency of a particular element k, in the given array.
 	public static int frequencyInSortedArray(int[] arr,int k){
 		int lowerBound = lowerBound(arr,k);
-      	int upperBound = upperBound(arr,k);
-      	if (lowerBound == -1 || upperBound == -1) return 0; //if the element is not present in the array.
-      	return upperBound - lowerBound + 1;
+      		int upperBound = upperBound(arr,k);
+      		if (lowerBound == -1 || upperBound == -1) return 0; //if the element is not present in the array.
+      		return upperBound - lowerBound + 1;
 	}
 	//Main Function
 	public static void main(String[] args){
