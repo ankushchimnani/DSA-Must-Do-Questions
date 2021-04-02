@@ -1,7 +1,7 @@
 ### **Anagram Detector! - Editorial**
 ### **Difficulty**: Low
 ### **Prerequisite: Strings,Sorting**
-	---
+---
 
 ### **Hint:**
 Anagrams is a word, phrase, or name formed by rearranging the letters of another, such as spar, formed from rasp.
