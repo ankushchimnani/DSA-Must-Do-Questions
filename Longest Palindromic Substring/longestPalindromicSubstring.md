@@ -14,7 +14,7 @@ Self explanatory.
 __O__(N*N), where N is the size of the string
 
 #### **Expected Space Complexity**
-__O__(N*N) OR __O__(1)
+__O__(N*N)
 
 #### **Constraints**
 	1 <= N <= 1000
