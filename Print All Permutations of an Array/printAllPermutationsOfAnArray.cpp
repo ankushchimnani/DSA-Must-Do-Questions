@@ -19,7 +19,7 @@ void permutations(int arr[], int l, int r, int N){
 	else{
 		
 		for (int i = l; i <= r; i++){
-      
+                        
 			swap(arr[l], arr[i]);
 
 			permutations(arr, l+1, r, N);
