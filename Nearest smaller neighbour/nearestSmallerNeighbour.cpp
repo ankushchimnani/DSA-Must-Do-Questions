@@ -28,8 +28,9 @@ void nearestSmallerNeighbour(int arr[], int N){
 
 int main(){
   
-	  int N = 5;
-    int arr[] =  { 1, 2, 5, 3, 5 };
+	int N = 5; // size of array
+	
+        int arr[] =  { 1, 2, 5, 3, 5 };
     
 	nearestSmallerNeighbour(arr, N);
 	
