@@ -55,15 +55,18 @@ One stack can be used for enqueue operations, while the other one can be used fo
   enqueue( X ){
     
      while( S1 is not empty ){
+     
         TOP2++;
         S2[TOP2] = S1[TOP1];
         TOP1--;
      }
      
      TOP1++;
+     
      S1[TOP1] = X;
 
      while( S2 is not empty ){
+     
         TOP1++;
         S1[TOP1] = S2[TOP2];
         TOP2--;
@@ -71,6 +74,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   }
   
   dequeue(){
+  
     X = S1[TOP1];
     TOP1--;
   }
@@ -108,13 +112,19 @@ One stack can be used for enqueue operations, while the other one can be used fo
   // Only Method 2 is shown
   
   N = 5
+  
   1 2 1 3 2 1 4 2
+  
   Let S1 and S2 be the required stacks.
 
   Query 1: Query type = 1, X = 2. S1 = { 2 }, S2 = { }.
+  
   Query 2: Query type = 1, X = 3. S1 = { 2, 3 }, S2 = { }.
+  
   Query 3: Query type = 2. S1 = {  }, S2 = { 3, 2}. Front element = 2, hence update S2 = { 3 }.
+  
   Query 4: Query type = 1, X = 4. S1 = { 4 }, S2 = { 3 }.
+  
   Query 5: Query type = 2. S1 = { 4 }, S2 = { 3 }. Since S2 is not empty, front element = 3, updated S2 = { }.
   
 
@@ -123,6 +133,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
 Method 1:
 
 Push operation : `O(N)` where N is the size of stack S1.
+
 Pop operation : `O(1)`.
 
 All elements of S1 is popped and pushed to S2 while enqueue operation.
@@ -130,6 +141,7 @@ All elements of S1 is popped and pushed to S2 while enqueue operation.
 Method 2:
 
 Push operation : `O(1)`
+
 Pop operation : `O(N)`. where N is the size of stack S1.
 
 If stack S2 is empty, all elements of S1 is to be popped and pushed to stack S2.
