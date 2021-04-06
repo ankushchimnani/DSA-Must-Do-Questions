@@ -38,41 +38,57 @@
 * Pseudo code:
   
   Stack STK;
+  
   String S;
-  N;
-  TOP;
-  FLAG = 0;
+  
+  N; // Size of sting S
+  
+  TOP; // TOP of the stack STK
+  
+  FLAG = 0; 
 
   for ( i from 0 to N - 1){
   
     if( S[i] == '(' or S[i] == '{' or S[i] == '[' )
-           STK.push(S[i]); 
+          
+          STK.push(S[i]); 
+          
     else{
+    
          if(STK is EMPTY ){
+         
              FLAG = 1;
              break;
+             
          }
         
          else{ 
+         
              if( ( S[i] == ')' && STK[TOP] != '(' ) or ( S[i] == '}' && STK[TOP] != '{' ) or ( S[i] == ']' && STK[TOP] != '[' ) ){
                   FLAG = 1;
                   break;
              }
+             
              else
                  STK.pop();
          }
+  
    }
+   
 }
 
 if(FLAG == 1 )
+
   print("Not balanced")
 
 else{
   
   if(STK.empty)
+  
     print("Balanced")
   
   else
+  
     print("Not Balanced")
 }
  
@@ -81,21 +97,32 @@ else{
 * Example -
  
   1. N = 6, S : [()]{}
+ 
      Stack Stk;
+     
      for i = 0, S[0] = '[', push into Stk. Stk = { '[' }
-     for i = 1, S[1] = '(', push into Stk. Stk = { '[' '(' }
+     
+     for i = 1, S[1] = '(', push into Stk. Stk = { '[' , '(' }
+     
      for i = 2, S[2] = ')', Stk[Top] = '(', which matches with S[2], hence pop the top of stack. Stk = { '[' }
+     
      for i = 3, S[3] = ']', Stk[Top] = '[', which matches with S[3], hence pop the top of stack. Stk is empty.
+     
      for i = 4, S[4] = '{', push into stack. Stk = { '{' }
+     
      for i = 5, S[5] = '}', Stk[Top] = '{', which matches with S[5], hence pop the top of stack. Stk is empty.
 
      After processing the string Stk is empty and out string is balanced.
 
   2. N = 4, S : [(])
+  
      Stack Stk;
+     
      for i = 0, S[0] = '[', push into Stk. Stk = { '[' }.
+     
      for i = 1, S[1] = '(', push into Stk. Stk = { '[' '(' }.
-     for i = 2, S[2] = ']', Stk[Top] = '(', which doesn;t matches with S[2], hence flag = 1, break the process.
+     
+     for i = 2, S[2] = ']', Stk[Top] = '(', which doesn't matches with S[2], hence flag = 1, break the process.
 
      Since flag value is 1 the string is not balanced.
 
