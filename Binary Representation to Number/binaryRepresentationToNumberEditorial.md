@@ -26,9 +26,11 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
   // Pre computing power of two
   
   powersOfTwo[32];
+  
   powersOfTwo[0] = 1;
 
   for( i from 1 to 31 )
+  
 	powersOfTwo[i] = powersOfTwo[i-1]*2;
  
   // Decimal value of binary string B
@@ -46,19 +48,24 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
 * Example -
  
   Let B = 00000000000000000000000000000111.
+  
   Let D be the decimal value of B initialised to 0;
 
   For i = 0, B[0] = 1, hence D = D + (2^0) = 1.
+  
   For i = 1, B[1] = 1, hence D = D + (2^1) = 3.
+  
   For i = 2, B[2] = 1, hence D = D + (2^2) = 7.
+  
   For i = 3, B[3] = 0, hence value of D will not change.
+  
   Similary for all i ( 4 <= i < 32 ) B[i] is 0. Hence no more change in value of D will take place.
 
   Hence value of D is equal to 7.
 
 ### Time Complexity:
 
-`O(32)`.
+`O(1)`.
 
 Maximum 32 iterations are required to calculate power of 2 as well as decimal value B.
 
