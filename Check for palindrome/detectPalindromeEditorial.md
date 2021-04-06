@@ -1,6 +1,6 @@
 ### **Detect Palindrome- Editorial**
 ### **Difficulty**: Low
-### **Prerequisite: Implementation,Key-Value Pairs,Two Pointer**
+### **Prerequisite: Implementation,Strings,Two Pointer**
 ---
 
 ### **Hint:**
