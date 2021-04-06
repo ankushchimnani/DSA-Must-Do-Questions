@@ -21,12 +21,12 @@ Another method, involved the use of two pointers, where one pointers explore the
 			* if (str.charAt(left) != str.charAt(right)) return false
 			* left++
 			* right--
-		* return false
+		* return true
 
 
 
 ### **Time Complexity**:
-The time complexity will be O(N), where N is the length of the linked list.
+The time complexity will be O(N), where N is the length of the string.
 
 ### **Space Complexity**:
 No extra space is required. Therefore, the space complexity will be O(1).
