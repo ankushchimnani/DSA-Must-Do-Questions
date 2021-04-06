@@ -36,14 +36,21 @@ Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
   Let Z = 8.
 
   Iteration 1: 8%2 equals 0, hence Z = 8/2 = 4.
+  
   Iteration 2: 4%2 equals 0, hence Z = 4/2 = 2.
+  
   Iteration 3: 2%2 equals 0, hence Z = 2/2 = 1.
+  
   Iteration 4: 1%2 equals 1, hence loop ends.
+  
   Since Z is equal to 1, hence the given number is a power of 2.
 
   Let Z = 6.
+  
   Iteration 1: 6%2 equals 0, hence Z = 6/2 = 3.
+  
   Iteration 2: 3%2 equals 1, loop ends.
+  
   Since Z is not equal to 1, hence the given number is not a power of 2.
  
 ### Time Complexity:
@@ -54,7 +61,7 @@ It will take maximum of `log(N)` operations to check of power of 2.
 
 ### Space Complexity:
 
-O(1).
+`O(1)`.
 
 No extra space is required.
 
@@ -62,7 +69,7 @@ No extra space is required.
 
    Let Z be the given number to check for.
 
-1. Let X = log(Z). 
+1. Let X = log(Z).
    If 2^X = Z, then Z is power of 2, else it is not.
 
 2. If Z is a power of 2, then it has only one set bit in its binary representation. Let X = Z - 1.
