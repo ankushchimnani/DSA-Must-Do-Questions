@@ -19,7 +19,7 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
 
 * Decimal value of a given binary string B is equal to ΣB[ xi ]*2^(xi).
 
-* Hence to find the decimal value we can simply extract all the set bits of binary string B and take the summation of their decimal values. This will require computing the powers of 2. You can precompute them which take O(32) time complexity.
+* Hence to find the decimal value we can simply extract all the set bits of binary string B and take the summation of their decimal values. This will require computing the powers of 2. You can precompute them which take O(1) time complexity.
 
 * Pseudo code:
   
