@@ -41,16 +41,21 @@ One queue can be used for push operations, while the other one can be used for p
   // Method 1
   
  QUEUE Q1, Q2;
+ 
  F1, F2; // Fronts of Q1 and Q2 respectively
+ 
  R1, R2; // Rears of Q1 and Q2 respectively
 
  PUSH( X ){
 
    R1++;
+   
    Q1[ R1 ] = X;
    
    while( F1 + 1 != R1 ){
+   
      Q2[ R2++ ] = Q1[F1++];
+     
    }
    
  }
@@ -58,6 +63,7 @@ One queue can be used for push operations, while the other one can be used for p
  POP(){
 
  X = Q1[F1];
+ 
  F1++;
 
  }    
@@ -65,12 +71,15 @@ One queue can be used for push operations, while the other one can be used for p
  // Method 2
   
  QUEUE Q1, Q2;
+ 
  F1, F2; // Fronts of Q1 and Q2 respectively
+ 
  R1, R2; // Rears of Q1 and Q2 respectively
 
  PUSH( X ){
 
    R1++;
+   
    Q1[ R1 ] = X;
    
  }
@@ -78,10 +87,12 @@ One queue can be used for push operations, while the other one can be used for p
  POP(){
 
  while( F1 + 1 != R1 ){
+ 
      Q2[ R2++ ] = Q1[F1++];
  }
 
  X = Q1[F1];
+ 
  F1++;
 
  } 
@@ -93,9 +104,13 @@ One queue can be used for push operations, while the other one can be used for p
   q1, q2 // Two required queues
 
   push(2), q1 = { 2 }, q2 = { }
+  
   push(3), q1 = { 2, 3 }, q2 = { }
+  
   pop(),   q1 = { 3 }, q2 = { 2 }. Top of stack is front of q1 = 3. After top of stack is popped, q1 = { }, q2 = { 2 }.
+  
   push(4), q1 = { }, q2 = { 2, 4 },  q1 to be treated as q2 and vice versa.
+  
   pop(),   q1 = { 2 }, q2 = { 4 }. Top of stack is front of q2 = 4. After top of stack is popped, q1 = { 2 }, q2 = { }.
 
 ### Time Complexity:
