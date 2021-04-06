@@ -62,8 +62,8 @@ Thus, **Time Complexity = O(2^N)**  Because we need to calculate 2^N paths
 
 ### Space Complexity For Brute Force
 
-- As Such no Extra Space is required
-- Thus , **Space Complexity is O(1)**
+- As Space taken by recursive calls wil be O(N) in stack
+- Thus , **Space Complexity is O(N)**
 
 ### Recurrence Relation
 
