@@ -5,11 +5,11 @@
 ### **Hint**:
 Visualizing the 2D in the form of squares, and hence rotating them appropriately would help.
 
-### Short Explanation:
+### **Short Explanation**:
 In this question, we have been asked to rotate a given square matrix, by 90 degrees, in anti-clockwise direction. A solution that requires extra space is trivial, but we need to do the rotation in-place. The 2D array, can be visualized in the form of squares, and each square is rotated simultaneously. It can be observed, that a matrix of dimension N X N, will have N/2 squares.
 
 ### **Detailed Explanation**:
-In this question, we are expected to rotate the square matrix, in anticlockwise direction by 90 degrees. A solution that requires extra space is trivial, and basically involves, converting the last column into the first row, the second last column into the second last column, and so on.
+In this question, we are expected to rotate the square matrix, in anticlockwise direction by 90 degrees. A solution that requires extra space is trivial, and basically involves, converting the last column into the first row, the second last column into the second row, and so on.
 A solution that requires no extra space can be thought of, by viusalizing the matrix in the form of squares, and rotating the matrix simulataneously. A matrix of dimension N X N, will have N/2(flooe value)squares. 
 For example, if the given matrix is 
 

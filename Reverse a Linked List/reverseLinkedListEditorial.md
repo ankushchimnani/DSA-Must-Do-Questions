@@ -20,7 +20,7 @@ For example,given the linked list `1 -> 2 -> 3`, intitially, the current node wi
 
 	After one has been traversed, the value of different nodes become
 	* Node current = (Node with value 2) 
-	* Node after = (Node with value 1)
+	* Node after = (Node with value 3)
 	* Node before = (Node with value 1)
 
 	After this has been traversed, the values of different nodes become

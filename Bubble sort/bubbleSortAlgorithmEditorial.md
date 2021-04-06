@@ -1,4 +1,4 @@
-### **Selection Sort Problem - Editorial**
+### **Bubble Sort - Editorial**
 ### **Difficulty**: Low
 ### **Prerequisite: Sorting, Arrays**
 ---
