@@ -18,7 +18,7 @@ A prime number N, is only divisible by 1 and itself. 2, 3, 5, 7, 11, 13, ... are
 
 * Observation :
 
-  1. If N is divisible by X, N is divisible by N/X.
+  1. If N is divisible by X then, N is divisible by N/X also.
   2. If N is represented as a product of two numbers A and B, then 1 <= A,B <= sqrt(N).
  
 * Hence it is optimal to check for all X ( 1 <= X <= sqrt(N) ), whether N%X is equal to 0 or not. If for any X ( 1 <= X <= sqrt(N) ) N%X = 0, then N%(N/X) is also zero. Hence for a single X we get two factors of N, except for the case where both X and N/X are same. 
@@ -51,18 +51,29 @@ Note - You can check for all X ( 1 <= X <= N ), whether N%X equals 0 or not and 
 * Example:
   
   Let N = 5.
+  
   Hence sqrt(N) = 2 ( lower bound ).
+  
   Initialise F = 0.
+  
   Check for 1 : 5%1 equals 0, hence 5%(5/1) is also 0. Hence F = F + 2 => F = 2.
+  
   Check 2 : 5%2 not equals 0.
+  
   Since F = 2, hence N = 5 is a prime.
 
   Let N = 6.
+  
   Hence sqrt(N) = 2
+  
   Initialise F = 0.
+  
   Check for 1 : 6%1 equals 0, hence 6%(6/1) also equals 0. Hence F = F + 2 => F = 2
+  
   Check for 2 : 6%2 equals0 0, hence 6%(6/2) is also 0. Hence F = F + 2 => F = 4.
+  
   Since F = 4, hence N = 6, is not prime.
+  
  
 ### Time Complexity:
 
