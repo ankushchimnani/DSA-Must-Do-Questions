@@ -1,6 +1,6 @@
 ### **Detect Loop in a Linked List - Editorial**
 ### **Difficulty: Medium**
-### **Prerequisite: [Maths](https://en.wikipedia.org/wiki/Number_theory), [Linked List](https://en.wikipedia.org/wiki/Linked_list#:~:text=In%20computer%20science%2C%20a%20linked,which%20together%20represent%20a%20sequence.)**
+### **Prerequisite: Maths, Linked List**
 
 ### **Hint**:
 Use two pointer approach.
@@ -19,7 +19,7 @@ This method is called the [Floyd's Cycle Finding Algorithm]
 	* Node slow = head
 	* Node fast = head
 	* while(fast != null && fast.next != null)
-		* slow = slow.next;=
+		* slow = slow.next
 		* fast = fast.next.next
 		* if (slow == fast) return true
 	* return false
