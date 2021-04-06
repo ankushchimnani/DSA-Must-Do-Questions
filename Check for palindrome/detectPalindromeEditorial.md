@@ -1,6 +1,6 @@
 ### **Detect Palindrome- Editorial**
 ### **Difficulty**: Low
-### **Prerequisite: Implementation,Ad-Hoc,Basic Math**
+### **Prerequisite: Implementation,Key-Value Pairs,Two Pointer**
 ---
 
 ### **Hint:**
