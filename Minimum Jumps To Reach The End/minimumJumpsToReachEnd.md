@@ -16,6 +16,14 @@ You can assume that you can always reach the last index.
 #### **Sample Explanation**
 The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
+
+#### **Expected Time Complexity**
+__O__(N), where N is the length of the two Strings
+
+
+#### **Expected Space Complexity**
+__O__(1). Constant Space Complexity. 
+
 ##### **Note:** Remember you can jump less than the mentioned value at any index of array.
 
 

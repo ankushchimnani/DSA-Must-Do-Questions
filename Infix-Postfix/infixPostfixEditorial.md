@@ -1,68 +1,119 @@
-### **Infix Postfix - Editorial**
-### **Difficulty**: Medium
-### **Prerequisite: Stacks**
----
-### **Hint:**
-Infix Expressions are of the type `a + b`, whereas, postfix expressions are of the type, `ab+`. A stack can be used to convert infix expressions to postfix expressions.
 
-### **Short Explanation**
-* Infix expression:The expression of the form a op b. When an operator is in-between every pair of operands.
-* Postfix expression:The expression of the form a b op. When an operator is followed for every pair of operands.
-* The compiler scans the expression either from left to right or from right to left. Consider the below expression: 
-				a op1 b op2 c op3 d 
-* If op1 = +, op2 = * , op3 = +,the compiler first scans the expression to evaluate the expression b * c, then again scan the expression to add a to it. The result is then added to d after another scan.The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
+# Infix to postfix - Editorial
 
+### Difficulty:  Medium
 
-### **Detailed Explanation**:
-Infix Expression- Operators are written in-between their operands. This is the usual way we write expressions.
-Example- a+b-c
-Postfix Expression- If the operator appears in the expression after the operands.
-Example- Postfix of the above expression would be ab+c-
-The compiler scans the expression either from left to right or from right to left.
-Consider the below expression: a + b * c + d
-The compiler first scans the expression to evaluate the expression b * c, then again scan the expression to add a to it. The result is then added to d after another scan.
-The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
-The postfix expression of this would be - abc * +d+
-This expression is much easy to evaluate than its infix counterpart.
-An important point to note here is Brackets too can be used in the input and postfix notation doesn't have brackets.
-* Infix expression:The expression of the form a op b. When an operator is in-between every pair of operands.
-* Postfix expression:The expression of the form a b op. When an operator is followed for every pair of operands.
-* The compiler scans the expression either from left to right or from right to left. Consider the below expression: 
-				a op1 b op2 c op3 d 
-* If op1 = +, op2 = * , op3 = +,the compiler first scans the expression to evaluate the expression b * c, then again scan the expression to add a to it. The result is then added to d after another scan.The repeated scanning makes it very in-efficient. It is better to convert the expression to postfix(or prefix) form before evaluation.
+### Prerequisite:  Stacks.
 
-The following steps give the method to convert infix expressions to postfix expressions, with the help of a stack.
+### Hint
 
-Steps
+Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix expression. 
 
-	1. Scan the infix expression from left to right. 
-	2. If the scanned character is an operand, output it. 
-	3. Else, 
-	      1 If the precedence of the scanned operator is greater than the precedence of the operator in the stack(or the stack is empty  or the stack contains a ‘(‘ ), push it. 
-	      2 Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the scanned operator. After doing that Push the scanned operator to the stack. (If you encounter parenthesis while popping then stop there and push the scanned operator in the stack.) 
-	4. If the scanned character is an ‘(‘, push it to the stack. 
-	5. If the scanned character is an ‘)’, pop the stack and and output it until a ‘(‘ is encountered, and discard both the parenthesis. 
-	6. Repeat steps 2-6 until infix expression is scanned. 
-	7. Print the output 
-	8. Pop and output from the stack until it is not empty.
+### Short Explanation
 
-### *Algorithm*
-	1. Scan the entire expression left to right. 
-	2. If the character is an operand, add it to the final postfix expression, as the relative ordering of the operands is same in postfix and infix expression.
-	3. If the character is an opening bracket, put it in the stack. 
-	4. If the character is a closing bracket, pop all the elements from the stack, until an opening bracket is met. If the opening bracket is not met, and the stack becomes empty, then the given infix expression is invalid. Brackets in postfix expressions are superfluous, therefore, pop out the bracket, without adding it into the postfix expression.
-	5. If the character is an operator, pop out all the operators, until the stack becomes empty, or the character at the top of the stack has a lower priority than the current character. 
-	6. After the entire expression is scanned, pop off all the elements from the stack, until the stack becomes empty, and add it to the final postfix expression. 
-	7. Finally, print the postfix expression. 
-	Priority Order -> (^) > (*,/) > (+,-).
-	Operators at the same level have same priority. 
-	Brackets free the expression off the priorities, which the algorithm ensures is taken care of. 
+* Scanning the infix expression from left to right. Whenever there is an operand, add them to the postfix expression. For the operators and parentheses, push them into the stack maintaining the precedence order.
 
+### Detailed Explanation
 
-### **Time Complexity**:
-Time Complexity = `O(n^2)`
-### **Space Complexity**:
-Space Complexity = `O(n)`
+* Let I be the infix expression and let S be the stack. Let P be the postfix expression initially empty.
+* Start scanning the infix expression I from left to right.
+ 
+* If the scanned character is an operand, push it to P.
+ 
+* Else if the scanned character is an operator then,
+       
+       If stack S is empty or top of S is contains a parenthesis or the precedence of the scanned operator is greater than the operator at top of stack S, push the operator into the stack S.
+       
+       Else, pop all the operators from stack S till all these conditions satisfy:
+             1. Stack S is not empty.
+             2. Top of stack S is not a parenthesis.
+             3. Top operator of the stack S is greater than or equal to the precedence of the sacanned operator.
+       
+      Afterwards push the scanned character into S.
 
-### **Alternate Solution**:
-None.
+       Push all the operators into P in the order they are popped from stack S.
+
+* Else if the scanned character is an opening bracket, push it to the stack. 
+* Else if the scanned character is a closing bracket, pop the stack until an opening bracket is encountered.
+  Push all the operators into P in the order they are popped from stack S. 
+
+* When the entire infix expression is scanned, pop the stack until it is not empty. Push all the operators into P in the order they are popped from Stack S.
+ 
+  At the end P contains the required postfix expression.
+
+* Example -
+ 
+  Let infix expression I = a+b-c+d*(e-f)/g+(h*(i/j)).
+  
+  Let S be the stack required and P be the postfix expression.  ab+c-def-*g/+hij/*+
+
+  Scanning I left to right:
+
+  First character : a -> S = { }, P = a
+  
+  Next character : + -> S = { + }, P = a.
+  
+  Next character : b -> S = { + }, P = ab.
+  
+  Next character : - -> S = { - }, P = ab+.
+  
+  Next character : c -> S = { - }, P = ab+c.
+  
+  Next character : + -> S = { + }, P = ab+c-.
+  
+  Next character : d -> S = { + }, P = ab+c-d.
+  
+  Next character : * -> S = { +* }, P = ab+c-d.
+  
+  Next character : ( -> S = { +*( }, P = ab+c-d.
+  
+  Next character : e -> S = { +*( }, P = ab+c-de.
+  
+  Next character : - -> S = { +*(- }, P = ab+c-de.
+  
+  Next character : f -> S = { +*(- }, P = ab+c-def.
+  
+  Next character : ) -> S = { +* }, P = ab+c-def-.
+  
+  Next character : / -> S = { +/ }, P = ab+c-def-*.
+  
+  Next character : g -> S = { +/ }, P = ab+c-def-*g.
+  
+  Next character : + -> S = { + }, P = ab+c-def-*g/+.
+  
+  Next character : ( -> S = { +( }, P = ab+c-def-*g/+.
+  
+  Next character : h -> S = { +( }, P = ab+c-def-*g/+h.
+  
+  Next character : * -> S = { +(* }, P = ab+c-def-*g/+h.
+  
+  Next character : ( -> S = { +(*( }, P = ab+c-def-*g/+h.
+  
+  Next character : i -> S = { +(*( }, P = ab+c-def-*g/+hi.
+  
+  Next character : / -> S = { +(*(/ }, P = ab+c-def-*g/+hi.
+  
+  Next character : j -> S = { +(*(/ }, P = ab+c-def-*g/+hij.
+  
+  Next character : ) -> S = { +(* }, P = ab+c-def-*g/+hij/.
+  
+  Next character : ) -> S = { + }, P = ab+c-def-*g/+hij/*.
+  
+  Pop all from stack hence P = P = ab+c-def-*g/+hij/*+.
+  
+  
+
+### Time Complexity:
+
+`O(N)`, where N is the length of infix expression.
+
+All characters can get push and popped from stack at most once.
+
+### Space Complexity:
+
+`O(N)`, where N is the length of infix expression.
+
+Maximum number of characters inside is stack is N.
+
+### Alternate Solution:
+None
