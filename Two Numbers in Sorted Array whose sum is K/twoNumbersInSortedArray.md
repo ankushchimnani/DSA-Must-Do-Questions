@@ -18,7 +18,7 @@ As seen from the sample input, the values at index 0 and 1 add up to the require
 __O__(N),where N is the size of the array. 
 
 #### **Expected Space Complexity**
-__O__(1), constant space complexity.  
+__O__(N), constant space complexity.  
 
 #### **Constraints**
 	 2 <= nums.length <= 103
