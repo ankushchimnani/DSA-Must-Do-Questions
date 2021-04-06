@@ -36,20 +36,27 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
 * Pseudo code:
   
   A[N]; // Array of size N
+  
   Stack S;
+  
   TOP;
+  
   NearestSmallerNeighbour[N];
 
   for( i from 0 to N-1 ){
     
      while( S is not empty && S[TOP] > A[i] ){
+     
 	  pop the top element;
           TOP--;
     }
     
      if( S is not empty )
+     
           NearestSmallerNeighbour[i] = S[TOP];
+          
      else
+     
           NearestSmallerNeighbour[i] = -1;
    
      TOP++;
@@ -62,6 +69,23 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
 * Example -
  
   Let A = [ 1, 4, 3, 5, 2 ].
+
+  
+  Stack S // Initially empty.
+  
+  For i = 0, A[0] = 1, S is empty, hence nearest smaller neighbour of A[0] is -1. Now, push A[0] to S, hence S will be [ 1 ].
+  
+  For i = 1, A[1] = 4, S = [ 1 ], TOP is at 1. Since S[TOP] < A[1] no popping of elements is required. Hence nearest smaller neighbour of A[0] is 1. Now, push A[1] to S, hence S will be [ 1, 4 ].
+  
+  For i = 2, A[2] = 3, S = [ 1,4 ], TOP is at 4. Since S[TOP] > A[2], pop the TOP of stack. Hence new top of stack is at 1 which is smaller than 3. Hence nearest smaller neighbour of A[2] is 1. Now, push A[2] to S, hence S will be [ 1, 3 ].
+  
+  For i = 3, A[3] = 5, S = [ 1, 3 ], TOP is at 3. Since S[TOP] < A[3] no popping of elements is required. Hence nearest smaller neighbour of A[3] is 3. Now, push A[3] to S, hence S will be [ 1, 3, 5 ].
+  
+  For i = 4, A[4] = 2, S = [ 1, 3, 5 ], TOP = 5. Observe:
+  
+  S[TOP] = 5 > A[4], hence pop the top of stack. S = [ 1, 3 ], S[TOP] = 3.
+  
+  S[TOP] = 3 > A[4], hence pop the top of stack. S = [ 1 ], S[TOP] = 1.
   
   Stack S // Initially empty.
   

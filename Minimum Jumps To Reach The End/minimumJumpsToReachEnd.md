@@ -24,6 +24,16 @@ __O__(N), where N is the length of the two Strings
 #### **Expected Space Complexity**
 __O__(1). Constant Space Complexity. 
 
+##### **Note:** Remember you can jump less than the mentioned value at any index of array.
+
+
+#### **Expected Time Complexity**
+__O__(N*N), where N is the length of the array
+
+
+#### **Expected Space Complexity**
+__O__(N), Space Complexity. 
+
 #### **Constraints**
 	1 <= nums.length <= 3 * 10^4
 	0 <= nums[i] <= 10^5

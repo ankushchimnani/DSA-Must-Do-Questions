@@ -1,3 +1,4 @@
+
 # Infix to postfix - Editorial
 
 ### Difficulty:  Medium
@@ -115,5 +116,4 @@ All characters can get push and popped from stack at most once.
 Maximum number of characters inside is stack is N.
 
 ### Alternate Solution:
-
 None

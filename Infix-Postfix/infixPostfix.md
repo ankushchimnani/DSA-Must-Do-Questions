@@ -33,7 +33,8 @@ This expression is much easy to evaluate than its infix counterpart.
 	ab+c-def-*g/+hij/*+
 
 #### **Sample Explanation**
-	The postfix expression for the expression given in the sample input is given by the ouptut in the sample explanation 
+The postfix expression for the expression given in the sample input is given by the ouptut.
+
 #### **Expected Time Complexity**
 __O__(N^2), where N is the size of the expression.
 
