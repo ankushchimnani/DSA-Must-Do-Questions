@@ -19,9 +19,9 @@ Try maximising the difference between prices of two days.
 * One possible solution is to calculate the profit obtained for all pairs of days i, j ( 1 <= i < j <= N ) and to take out the maximum among them. This will lead to a time complexity of O(N*N) which is not desirable.
 * Observation:
   1. If on ith day ( 1 <= i <= N ) a stock is bought, then for it to be sold on jth day, i < j <= N.
-  2. If the cost of a stock for the days i,j,k ( 1<= i < j < k <= N) be prices[i], prices[j] and prices[k], with the condition that prices[i] < prices[j] < prices[k], and, a stock is bought on day i then, it is better to sell the stock on day k than day j.
+  2. Let a stock is bought on day i ( 1<= i <= N) with cost prices[i]. Let the cost of stock on days j and k ( i < j < k ) be prices[j] and prices[k], with the condition that prices[i] < prices[j] < prices[k], then, it is better to sell the stock bought on day i on day k than day j.
 
-* Hence it is optimal to determine for all prices[j] ( 1 <= j <= N ) the minimum value of prices[i] for all i < j. The maximum among all the values of prices[j] - prices[i] will fetch the optimal result.
+* Hence it is optimal to determine for all prices[j] ( 1 <= j <= N ) the minimum value of prices[i] for all i < j. This can be easily done by repeated updation of the minimum cost of stocks. The maximum among all the values of prices[j] - (min stock price) for all j ( 1 < j <= N ) will fetch the optimal result.
 
 * Pseudo code:
   
@@ -53,10 +53,15 @@ Try maximising the difference between prices of two days.
   min_price, max_profit.
 
   Iteration 1: prices[1] = 7, min_price = 7, max_profit = 0.
+  
   Iteration 2: prices[2] = 1, min_price = 1, max_profit = 0.
+  
   Iteration 3: prices[3] = 5, min_price = 1, max_profit = 4.
+  
   Iteration 4: prices[4] = 3, min_price = 1, max_profit = 4.
+  
   Iteration 5: prices[5] = 6, min_price = 1, max_profit = 5.
+  
   Iteration 6: prices[6] = 4, min_price = 1, max_profit = 5.
 
   Hence maximum profit obtained is 5.
