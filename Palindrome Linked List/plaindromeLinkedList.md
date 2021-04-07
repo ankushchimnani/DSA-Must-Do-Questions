@@ -21,8 +21,7 @@ __O__(N), where N is the number of elements in the linked list.
 #### **Expected Space Complexity**
 
 __O__(N), where N is the number of elements in the linked list.
-
-=__O__(1). i.e Constant Space Complexity 
+ 
 
 #### **Constraints**
 	This can be checked both iteratively and recursively. The task is to implement both the implementations.
