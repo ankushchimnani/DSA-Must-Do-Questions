@@ -28,7 +28,9 @@ For Example, given a string A = "naman" and a string B = "manan". After sorting 
 In the best case, sorting requires __`O(NlogN)`__, where N is the number of characters in the string. Therefore, the time complexity will be __`O(NlogN)`__.
 
 ### **Space Complexity**:
-No extra space will be required, only spaces will be removed from the original strings. Therefore, the space complexity will be __`O(1)`__.
+
+No extra space will be required, only spaces will be removed from the original strings. 
+Overall space complexity will be __`O(N)`__, where N is the size of string.
 
 ### **Alternate Solution**:
 Instead of using sorting, we can use arrays/Key-Value Pairs to compare the frequency of characters in both the strings.
