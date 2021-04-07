@@ -81,7 +81,7 @@ Time required to sort the array.
 
 ### Space Complexity:
 
-`O(1)`.
+`O(N)`, where N is the number of meetings.
 
 No extra space is required.
 

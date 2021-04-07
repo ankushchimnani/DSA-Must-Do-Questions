@@ -10,15 +10,15 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
 
 ### Short Explanation
 
-* Let X and Y ( 1 <= X,Y <= N ) be the current and previous stations respectively. In travelling from Y to X, let L is the amount of gas left in the tank. Now for going from X to the next station from X, L + gas[X] - cost[X] > 0.
-  Hence for each station S ( 1 <= S <= N ) as the starting station, we may check whether it is possible to travel a complete circuit based upon the above condition. If for any station it is possible, it serves as the required asnwer. 
+* Let X and Y ( 1 <= X,Y <= N ) be the current and previous stations respectively. In travelling from Y to X, let L is the amount of gas left in the tank. Now for going from X to the next station, L + gas[X] - cost[X] > 0.
+  Hence for each station S ( 1 <= S <= N ) as the starting station, we may check whether it is possible to travel a complete circuit based upon the above condition. If for any station it is possible, it serves as the required answer. 
   If for any of stations as a starting point, a complete circuit can't be completed, the answer is -1.
   
 ### Detailed Explanation
 
 * Let N be the number os stations with cost[] and gas[] be the required cost and gas arrays respectively.
 
-* One simple way to approach the problem is to consider all the stations as starting point one by one and try completing the circuit. Among all possibilities the one with minimum cost is the 
+* One simple way to approach the problem is to consider all the stations as starting point one by one and try completing the circuit. If it is possible to complete a circuit for   a station i ( 1 <= i <= N ) then, i will be the required answer. This takes a time complexity of  O(N*N) which is not desirable.
 
 * Observation:
   
@@ -40,7 +40,7 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
   1. If, L + gas[i] - cost[i] < 0, change S to i+1 and, reset the value of L to 0.
   2. Else, assign L to L + gas[i]-cost[i]. 
 
-  After the iteration over all stations is over, if L >= 0, the value of S is the required answer. Else  the answer is -1.
+  After the iteration over all stations is over, if L >= 0, the value of S is the required answer.
 
 * Why this works?
 
@@ -139,7 +139,7 @@ The entire array is iterated only once.
 
 ### Space Complexity:
 
-`O(1)`.
+`O(N)`, where N is the number of stations.
 
 No extra space is required.
 

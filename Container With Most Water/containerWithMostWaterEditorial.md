@@ -107,7 +107,7 @@ Maximum of N iterations are possible for the two pointers approach.
 
 ### Space Complexity:
 
-`O(1)`.
+`O(N)`, where N is the size of array.
 
 No extra space is required.
 
