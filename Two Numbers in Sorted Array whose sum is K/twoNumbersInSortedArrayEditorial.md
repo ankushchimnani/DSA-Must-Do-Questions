@@ -1,6 +1,6 @@
 ### **Two Numbers whose sum is equal to K in sorted array - Editorial**
 ### **Difficulty**: Low
-### **Prerequisite: Hash-Table**
+### **Prerequisite: Two Pointer**
 ---
 
 ### **Hint** :
