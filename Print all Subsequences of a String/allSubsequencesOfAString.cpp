@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function of print all subsequences of a string
 
 void printAllSubsequences(string input, string output){
+	
+	// Function of print all subsequences of a string
     
 	// if the input string is empty then print the output string
 	
