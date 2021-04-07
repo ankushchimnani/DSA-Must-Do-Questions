@@ -21,7 +21,7 @@
 
 ### Time Complexity:
 
-` O(Log min(A, B)) `, where `A` and `B` are two Numbers
+` O(Log max(A, B)) `, where `A` and `B` are two Numbers
 
 ### Space Complexity:
 
