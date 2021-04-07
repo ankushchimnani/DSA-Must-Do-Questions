@@ -6,7 +6,7 @@
 
 ## Hint :
 
-- Perform Recursion to check if the total can be reached by choosing the coin or not for each coin of given dominations . If choosing the current coin result results in the solution, then update the number of ways.
+- Perform Recursion to check if the total can be reached by choosing the coin or not for each coin of given dominations . If choosing the current coin results in the solution, then update the number of ways.
 
 ## Short Explanation :
 
