@@ -12,8 +12,10 @@ We are asked to calculate all the possible permutations, so we may think of usin
 
 *  In every backtracking problem , there are two things to keep in mind :
 
-    * Base Case : Every problem of backtracking has some base case which tells us at which point we have to stop with the recursion process. In our case, when the size of our "l" reaches "r", we stop the recursion for that combination
-    * Condition : After generating permutations corresponding to a particular arr[i] , swap arr[l] and arr[i] back to their original position.
+    * Base Case : Every problem of backtracking has some base case which tells us at which point we have to stop with the recursion process. In our case, when the size of our "l" reaches "r", we stop the recursion for that combination.
+    
+    * Condition : After generating permutations corresponding to a particular 
+    arr[i] , swap arr[l] and arr[i] back to their original position.
 
 ### Detailed Explanation
 
