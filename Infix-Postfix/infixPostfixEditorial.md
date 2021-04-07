@@ -22,19 +22,20 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
  
 * Else if the scanned character is an operator then,
        
-       If stack S is empty or top of S is contains a parenthesis or the precedence of the scanned operator is greater than the operator at top of stack S, push the operator into the stack S.
+       If stack S is empty or top of S is contains a parenthesis or the precedence of the scanned operator is greater than the operator at top of stack S, push the operator into        the stack S.
        
        Else, pop all the operators from stack S till all these conditions satisfy:
              1. Stack S is not empty.
              2. Top of stack S is not a parenthesis.
              3. Top operator of the stack S is greater than or equal to the precedence of the sacanned operator.
        
-      Afterwards push the scanned character into S.
+       Afterwards push the scanned character into S.
 
        Push all the operators into P in the order they are popped from stack S.
 
 * Else if the scanned character is an opening bracket, push it to the stack. 
 * Else if the scanned character is a closing bracket, pop the stack until an opening bracket is encountered.
+* 
   Push all the operators into P in the order they are popped from stack S. 
 
 * When the entire infix expression is scanned, pop the stack until it is not empty. Push all the operators into P in the order they are popped from Stack S.
@@ -43,63 +44,35 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
 
 * Example -
  
-  Let infix expression I = a+b-c+d*(e-f)/g+(h*(i/j)).
+  Let infix expression I = A+B*C/(E-F)
   
-  Let S be the stack required and P be the postfix expression.  ab+c-def-*g/+hij/*+
+  Let S be the stack required and P be the postfix expression.
 
   Scanning I left to right:
 
-  First character : a -> S = { }, P = a
+  First character : A -> S = { }, P = A
   
-  Next character : + -> S = { + }, P = a.
+  Next character : + -> S = { + }, P = A.
   
-  Next character : b -> S = { + }, P = ab.
+  Next character : B -> S = { + }, P = AB.
   
-  Next character : - -> S = { - }, P = ab+.
+  Next character : * -> S = { +* }, P = AB.
   
-  Next character : c -> S = { - }, P = ab+c.
+  Next character : C -> S = { +* }, P = ABC.
   
-  Next character : + -> S = { + }, P = ab+c-.
+  Next character : / -> S = { +/ }, P = ABC*.
   
-  Next character : d -> S = { + }, P = ab+c-d.
+  Next character : ( -> S = { +/( }, P = ABC*.
   
-  Next character : * -> S = { +* }, P = ab+c-d.
+  Next character : E -> S = { +/( }, P = ABC*E.
   
-  Next character : ( -> S = { +*( }, P = ab+c-d.
+  Next character : - -> S = { +/(- }, P = ABC*E.
   
-  Next character : e -> S = { +*( }, P = ab+c-de.
+  Next character : F -> S = { +/(- }, P = ABC*EF.
   
-  Next character : - -> S = { +*(- }, P = ab+c-de.
+  Next character : ) -> S = { +/ }, P = ABC*EF-.
   
-  Next character : f -> S = { +*(- }, P = ab+c-def.
-  
-  Next character : ) -> S = { +* }, P = ab+c-def-.
-  
-  Next character : / -> S = { +/ }, P = ab+c-def-*.
-  
-  Next character : g -> S = { +/ }, P = ab+c-def-*g.
-  
-  Next character : + -> S = { + }, P = ab+c-def-*g/+.
-  
-  Next character : ( -> S = { +( }, P = ab+c-def-*g/+.
-  
-  Next character : h -> S = { +( }, P = ab+c-def-*g/+h.
-  
-  Next character : * -> S = { +(* }, P = ab+c-def-*g/+h.
-  
-  Next character : ( -> S = { +(*( }, P = ab+c-def-*g/+h.
-  
-  Next character : i -> S = { +(*( }, P = ab+c-def-*g/+hi.
-  
-  Next character : / -> S = { +(*(/ }, P = ab+c-def-*g/+hi.
-  
-  Next character : j -> S = { +(*(/ }, P = ab+c-def-*g/+hij.
-  
-  Next character : ) -> S = { +(* }, P = ab+c-def-*g/+hij/.
-  
-  Next character : ) -> S = { + }, P = ab+c-def-*g/+hij/*.
-  
-  Pop all from stack hence P = P = ab+c-def-*g/+hij/*+.
+  Pop all from stack hence P = ABC*EF-/+
   
   
 
