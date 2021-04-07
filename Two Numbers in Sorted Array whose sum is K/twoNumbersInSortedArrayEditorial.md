@@ -10,7 +10,7 @@ A two pointer approach can be helpful here.
 In this question,we have to find out two elements in the array whose sum is equal to K. Since, the array is sorted, we can use a two-pointer approach, in this case. We can have two pointers, one iterating from left to right, while other iterating from right to left. The iteration will continue, till the point the two pointers meet. At every step, we find the sum of the elements stored at the left and the right pointer in the array. If the value of sum is greater than the required sum K, we check for a smaller sum, by decreasing the right pointer, else if the sum is lesser than K, then we add a higher value by moving the left pointer ahead. If the value is equal to K, we return the index of the left and the right pointer.
 
 ### **Detailed Explanation**:
-In this question, we are given a sorted array A, of size N, and an integer K, and we have to find out if there exist twp values in the array, stored at different indices, such that there sum is exactly to K. A naive brute force approach is to, fix one value, and then try to find the sum of this particular value with all the other values in the array, and check if any of them become equal to K. The worst case time complexity of this approach is `O(N^2)`, where N is the size of the array. 
+In this question, we are given a sorted array A, of size N, and an integer K, and we have to find out if there exist two values in the array, stored at different indices, such that there sum is exactly to K. A naive brute force approach is to, fix one value, and then try to find the sum of this particular value with all the other values in the array, and check if any of them become equal to K. The worst case time complexity of this approach is `O(N^2)`, where N is the size of the array. 
 But since, the array is sorted, a two pointer approach can be useful here, such that we have two pointers, __left__ and __right__, where the left pointer iterates the array from left to right, while the right pointer iterates from right to left. At every step, we find the sum of the elements stored at the left and the right pointer in the array. If the value of sum is greater than the required sum K, we check for a smaller sum, by decreasing the right pointer, else if the sum is lesser than K, then we add a higher value by moving the left pointer ahead. If the value is equal to K, we return the index of the left and the right pointer.
 
 For example, if the given array is `array = [2,7,11,15]`, and the value of `K = 9`. So, we have a pointer iterating from left to right, while another pointer iterates, from right to left. So, initally, the value of `left = 0 and right = arr.length - 1`.
@@ -32,7 +32,8 @@ For example, if the given array is `array = [2,7,11,15]`, and the value of `K = 
 The time complexity will be `O(N)`, where N is the size of the array.
 
 ### **Space Complexity**:
-No extra space is required, therefore, space complexity will be `O(1)`
+No extra space is required, therefore, auxillary space complexity will be `O(1)`.
+Overall space complexity is `O(N)`, where N is the size of array.
 
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
