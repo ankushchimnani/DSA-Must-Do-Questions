@@ -73,7 +73,7 @@ All elements smaller than 7 are on the left of it and all elements greater than 
 
 ### Space Complexity:
 
-No Extra Space is required
+`O(N)`, where N is the size of array
 
 ### Alternate Solution:
 NA
