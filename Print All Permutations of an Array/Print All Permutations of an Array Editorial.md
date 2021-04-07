@@ -34,7 +34,7 @@ We are asked to calculate all the possible permutations, so we may think of usin
 
 ### Space Complexity:
 
-`O(N!)`, where `N` is the size of array
+`O(N)`, where `N` is the size of array
 
 ### Alternate Solution:
 
