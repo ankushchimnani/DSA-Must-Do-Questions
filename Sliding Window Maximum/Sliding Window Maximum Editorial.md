@@ -36,4 +36,4 @@ We are going to use index of elements in dequeue instead of the array elements.
 
 ### Alternate Solution:
 
-Using heap we could have solved the problem in by keeping the maaking a heap of size k and then inserting new elements as we move the window ahead and using heapify to get the maximum value by root of the max heap, complexity of this approach will be O(n*log(k))
+Using heap we could have solved the problem by making a max heap of size k and then inserting new elements to it as we move the window ahead and using heapify to maintain the heap and get the maximum value from root of the max heap, complexity of this approach will be O(n*log(k))
