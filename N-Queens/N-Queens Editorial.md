@@ -2,7 +2,7 @@
 
 ### Difficulty:  Medium
 
-### Prerequisite:  Recursion
+### Prerequisite:  Recursion, Backtracking
 
 ### Hint
 
