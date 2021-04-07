@@ -1,5 +1,5 @@
 ## **Fizz Buzz**
-Given an integer N. Print the numbers from 1 to N and for multiples of ‘3’ print “Fizz” instead of the number and for the multiples of ‘5’ print “Buzz”. 
+Given an integer N. Print the numbers from 1 to N and for multiples of ‘3’ print “Fizz” instead of the number, for the multiples of ‘5’ print “Buzz” and for multiples of both 5 and 3 print "FizzBuzz"
 
 #### **Sample Input**
 	input: N = 10
