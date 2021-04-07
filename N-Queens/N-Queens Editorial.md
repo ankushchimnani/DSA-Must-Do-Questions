@@ -10,7 +10,7 @@ Place queens one by one in different columns and check for the possibility of at
 
 ### Short Explanation
 
-* The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for attack chances with already placed queens. In the current column, if we find a row for which there is no ataack chance, we mark this row and column as part of the solution. If we do not find such a row due to attacks then we backtrack and return false.
+* The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for attack chances with already placed queens. In the current column, if we find a row for which there is no attack chance, we mark this row and column as part of the solution. If we do not find such a row due to attacks then we backtrack and return false.
 
 ### Detailed Explanation
 
