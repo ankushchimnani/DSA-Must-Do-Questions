@@ -26,7 +26,6 @@ if __name__ == "__main__":
 	arr = [5, 1, 6, 3, 7]
 
 	bubbleSort(arr, N)
-	print("hello")
 
 	# Printing Elements of array
 	print(arr)
