@@ -13,5 +13,6 @@ class Main{
 	public static void main(String[] args){
 		int n = 4;
 		int[] arr = {3,5,6,1};
+        permutationWithLargestSum(arr);
 	}
 }
