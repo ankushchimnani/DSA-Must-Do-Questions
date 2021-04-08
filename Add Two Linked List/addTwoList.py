@@ -1,63 +1,60 @@
-
+# Node Class containing the value and next pointer
 class Node:
-	def __init__(self, value=0, next=None):
-		self.value = value
-		self.next = next
-
-class AddTwoList:
-	def addTwoList(self, listNode1, listNode2):
-
-		tempNode = Node()
-		current = tempNode
-		carry = 0
-
-		while(listNode1 != None or listNode2 != None):
-
-			if listNode1 != None:
-				valueOfList_1 = listNode1.value
-			else :
-				valueOfList_1 = 0
-
-			if listNode2 !=None:
-				valueOfList_2 = listNode2.value
-			else:
-				valueOfList_2 = 0
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
 
-			sum1 = valueOfList_1 + valueOfList_2 + carry
-			carry = sum1//10
+def helper(listNode1, listNode2, carry):
+    if listNode1 == None and listNode2 == None and carry == 0:
+        return
 
-			current.next = Node(sum1%10)
-			current = current.next
+    Val1 = listNode1.value if listNode1 else 0
+    Val2 = listNode2.value if listNode2 else 0
 
-			if listNode1 != None:
-				listNode1 = listNode1.next
+    total = carry + Val1 + Val2
+    node = Node(total % 10)
+    carry = total // 10
 
-			if listNode2 != None:
-				listNode2 = listNode2.next
+    list1Next = listNode1.next if listNode1 else None
+    list2Next = listNode2.next if listNode2 else None
 
-		
+    node.next = helper(list1Next, list2Next, carry)
 
-
-
-
-
-
+    return node
 
 
+def printNode(temp):
+    while temp:
+        print(temp.value, end=" ")
+        temp = temp.next
 
 
+# List class containing set of functions to insert, print and detect loop
+class List:
+    # Intialize the head object
+    def __init__(self):
+        self.head = None
 
-# MAIN FUNCTION
+    # This will insert the node at he beginning
+    def insert(self, value):
+        node = Node(value)
+        node.next = self.head
+        self.head = node
+
+
 if __name__ == "__main__":
+    list1 = List()
 
-	# Inputs
-	N = 5
-	arr = [5, 1, 6, 3, 7]
+    list1.insert(2)
+    list1.insert(4)
+    list1.insert(3)
 
-	bubbleSort(arr, N)
-	print("hello")
+    list2 = List()
 
-	# Printing Elements of array
-	print(arr)
+    list2.insert(5)
+    list2.insert(6)
+    list2.insert(4)
 
+    node = helper(list1.head, list2.head, 0)
+    printNode(node)
