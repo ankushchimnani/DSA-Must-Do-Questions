@@ -2,7 +2,7 @@
 
 Given a sorted array of integers nums and an integer K, return indices of the two numbers such that they add up to K.
 
-
+Note: You can assume that the answer always exists
 
 #### **Sample Input**
 	array = [2,7,11,15], K = 9
