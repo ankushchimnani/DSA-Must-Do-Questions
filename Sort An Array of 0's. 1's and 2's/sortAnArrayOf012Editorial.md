@@ -10,7 +10,7 @@ Count the number of 0's, 1's, and 2's.
 
 ### Short Explanation
 
-* For an array A of N elements having only 0's, 1's and 2's then, it is obvious that if we sort the array A all of the 0's will come first followed by 1's and then 2's. Hence we can count the occurrences of 0's, 1's and, 2's and replace the array elements accordingly to sort the required array. 
+* For an array A of N elements having only 0's, 1's and 2's then, it is obvious that if we sort the array A all of the 0's will come first followed by 1's and then 2's. Hence we can count the occurrences of 0's, 1's and, 2's and update the values of array elements accordingly to sort the required array. 
 
 ### Detailed Explanation
 
