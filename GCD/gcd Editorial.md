@@ -15,13 +15,13 @@
 
 ### Detailed Explanation
 
-* We can traverse from min(A,B) to 1 and check which number divides both A and B, and if it does it is the GCD but it will take O(min(A,B)) time.
+* We can traverse from min(A,B) to 1 and check which number divides both A and B, and if it does it is the GCD but it will take O(max(A,B)) time.
 
 * We are going to use Euclidean method to find out the GCD efficiently, The idea is, GCD of two numbers doesn’t change if smaller number is subtracted from a bigger number now to make it more efficient instead of subtraction, if we divide the smaller number, the algorithm stops when we find remainder 0.
 
 ### Time Complexity:
 
-` O(Log max(A, B)) `, where `A` and `B` are two Numbers
+` O(log(max(A, B))) `, where `A` and `B` are two Numbers
 
 ### Space Complexity:
 
