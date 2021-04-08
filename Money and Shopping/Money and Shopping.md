@@ -10,7 +10,7 @@
 
 ### Short Explanation
 
-* We can have a dp matrix to store the amount of money spent till any i-th row (shop) and also the money spent in (i+1)-th row (shop), will be the sum of minimum of the dp value of items which are not being purchased in the previous (i-th) row (or shop) and the price of item in the current (i+1)th row (shop).
+* We can have a dp matrix to store the amount of money spent till any i-th row (shop). The minimum cost of purchasing an item in ith row (shop) is the dp value of items which are not being purchased in the previous (i-th) row (or shop) added to the price of item in the current (i)th row (shop). Minimum of all all three possible purchases in the last shop is the required answer.
 
 ### Detailed Explanation
 
