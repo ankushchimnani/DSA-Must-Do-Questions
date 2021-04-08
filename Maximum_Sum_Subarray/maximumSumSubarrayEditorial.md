@@ -18,7 +18,7 @@ Try looking for all non-negative contiguous segments of the array.
 
 * One way to solve this problem is to generate all subarrays and calculate their sum. Maximum sum among all obtained, is the required answer. 
  
-  This leads to a time complexity of O( N*N*N ) which is not desirable.
+  This leads to a time complexity of `O( N*N*N )` which is not desirable.
 
 * Observation:
 
