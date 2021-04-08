@@ -11,7 +11,7 @@ class Main{
 		int high = arr.length-1;
 		while(low < high){
 			int mid = low + (high - low)/2;
-			if (nums[mid] > nums[mid + 1]) high = mid;
+			if (arr[mid] > arr[mid + 1]) high = mid;
 			else{
 				low = mid + 1;
 			}
@@ -23,7 +23,7 @@ class Main{
 	public static void main(String[] args){
 		int n = 4;
 		int[] array = {1,2,3,1};
-		int ans = findPeakElement(n,arr);
+		int ans = findPeakElement(n,array);
 		System.out.println(ans);
 	}
 }
