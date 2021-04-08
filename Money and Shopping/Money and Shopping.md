@@ -10,12 +10,12 @@
 
 ### Short Explanation
 
-* We can have a dp matrix to store the amount of money spent till any i-th row and also the money spent in (i+1)-th row, will be the sum of minimum of the dp value of items which are not being purchased in the previous row (i-th) (or shop) and the price of item in the current (i+1)th row.
+* We can have a dp matrix to store the amount of money spent till any i-th row (shop) and also the money spent in (i+1)-th row (shop), will be the sum of minimum of the dp value of items which are not being purchased in the previous (i-th) row (or shop) and the price of item in the current (i+1)th row (shop).
 
 ### Detailed Explanation
 
-* Make a dp matrix of size N*3 to store the amount of money spent in i-th row
-* The amount of money spent in any i-th row will be :
+* Make a dp matrix of size N*3 to store the amount of money spent in i-th row (shop)
+* The amount of money spent in any i-th row (shop) will be :
     ```
     dp[i][0] = arr[i][0] + min(dp[i - 1][1], dp[i - 1][2]);
     dp[i][1] = arr[i][1] + min(dp[i - 1][0], dp[i - 1][2]);
