@@ -1,6 +1,6 @@
 # Data Structures & Algorithms
 
-![Data%20Structures%20&%20Algorithms%20fb02f57f917c4476806b1f4c44377139/DSA_Image.png](Data%20Structures%20&%20Algorithms%20fb02f57f917c4476806b1f4c44377139/DSA_Image.png)
+![DSA_Image.png](DSA_Image.png)
 
 This repo consists of some of the most popular interview questions based on Data Structures and Algorithms. This repo is aimed to boost your interview preparation, and narrow down the number of questions to the most important ones.
 
