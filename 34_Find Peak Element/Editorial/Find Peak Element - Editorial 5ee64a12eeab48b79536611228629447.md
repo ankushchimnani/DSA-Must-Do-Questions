@@ -52,6 +52,8 @@ Time complexity is **O(Logn)** Because of binary search.
 
 ### 2. Space Complexity :
 
-Space Complexity is O(1)
+O(n), space required to take the input
 
-- No extra space is required.
+O(1), extra space required.
+
+Overall : O(n)
