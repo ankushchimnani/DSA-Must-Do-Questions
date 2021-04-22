@@ -63,7 +63,8 @@ In every step of binary search,
 - This will result in worst Case Time Complexity : O(logn)
 
 ### Space Complexity
+`O(n)` , space required to take input.
 
-No extra memory is needed
+`O(1)` , extra space required.
 
-Space : O(1)
+ Overall : `O(n)`.
