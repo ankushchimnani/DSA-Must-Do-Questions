@@ -74,8 +74,9 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
 
   Hence our solution is optimal.
   
-* Pseudo code:
   
+* Pseudo code:
+  ```python
   gas[N]; // Amount of gas at all of N stations
   
   cost[N]; // Cost to reach station i+1 from station i.
@@ -110,7 +111,7 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
   
     print S;
        
-
+  ```
 * Example -
  
   gas = [1,2,3,4,5]
