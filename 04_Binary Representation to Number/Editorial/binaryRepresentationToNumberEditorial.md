@@ -23,6 +23,7 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
 
 * Pseudo code:
   
+  ```python
   // Pre computing power of two
   
   powersOfTwo[32];
@@ -44,7 +45,7 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
           decimalValueOfB = decimalValueOfB + powersOfTwo[i];
     
   }
-
+  ```
 * Example -
  
   Let B = 00000000000000000000000000000111.
