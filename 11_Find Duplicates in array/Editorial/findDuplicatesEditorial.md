@@ -35,6 +35,7 @@ For example, given an array `A = [1,3,3,2,4]` has 5 elements. Therefore, the sum
 ### Space Complexity:
 
 `O(N)` - space required to take the input.
+
 `O(1)` - required extra space.
 
 Overall : `O(N)`.
