@@ -20,6 +20,12 @@ If the array is not rotated and the array is in ascending order, then last eleme
 ### **Time Complexity**:
 Same as Binary Search  O(logN)
 ### **Space Complexity**:
-O(1). No extra space is required.
+
+O(N), space required to take the input
+
+O(1),extra space required.
+
+Overall : O(N)
+
 ### **Alternate Solution**:
 Linear Search will result in TLE for some cases.
