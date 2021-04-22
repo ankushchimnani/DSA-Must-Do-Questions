@@ -35,6 +35,7 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
 
 * Pseudo code:
   
+  ```python
   A[N]; // Array of size N
   
   Stack S;
@@ -63,8 +64,7 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
 
      S[TOP] = A[i];
 
-}
-        
+  ```        
 
 * Example -
  
@@ -115,9 +115,11 @@ Each element of array A gets pushed and popped from the stack at most once.
 
 ### Space Complexity:
 
-`O(N)`.
+`O(N)`, Space required to take the input.
 
-At most N elements can be there inside the stack.
+`O(N)`, Extra space required - At most N elements can be there inside the stack.
+
+Overall : `O(N)`
 
 ### Alternate Solution:
 
