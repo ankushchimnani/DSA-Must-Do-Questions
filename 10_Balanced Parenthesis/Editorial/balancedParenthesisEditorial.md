@@ -36,7 +36,7 @@
   
    
 * Pseudo code:
-  
+  ```python
   Stack STK;
   
   String S;
@@ -74,7 +74,7 @@
          }
   
    }
-   
+```python   
 }
 
 if(FLAG == 1 )
@@ -91,7 +91,7 @@ else{
   
     print("Not Balanced")
 }
- 
+```
              
 
 * Example -
