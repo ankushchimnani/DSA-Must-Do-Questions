@@ -56,6 +56,7 @@ Check for every pair of array elements to find out the maximum water that can be
 
 * Pseudo code:
   
+  ```python
   MAX_WATER; // Maximum amount of water that can be obtained
 
   First = 1, Last = N;
@@ -72,7 +73,7 @@ Check for every pair of array elements to find out the maximum water that can be
      
         Last--;
   }
-
+  ```
 * Example -
  
   Let N = 9, array A =  [1,8,6,2,5,4,8,3,7].
