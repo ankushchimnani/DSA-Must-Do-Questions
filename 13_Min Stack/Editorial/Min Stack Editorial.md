@@ -66,7 +66,7 @@ If A < B then 2A - B < A.
 * Pseudo code:
   
   // Code for Stack operations
-  
+  ```python
   Stack S;
   X; // Element to be pushed
   M; // Minimum of stack.
@@ -103,7 +103,7 @@ If A < B then 2A - B < A.
      M = 2M - S[TOP];
      TOP--;
    }
-
+  ```
 * Example -
   
   Stack S;
