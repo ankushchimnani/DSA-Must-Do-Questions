@@ -1,5 +1,3 @@
-# Editorial
-
 # FizzBuzz - Editorial
 
 ### Difficulty: Easy
