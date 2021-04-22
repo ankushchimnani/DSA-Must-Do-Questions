@@ -88,4 +88,4 @@ No extra space is required.
 
 ### Alternate Solution:
 
-If N is prime, then for X ( 1 < X < N - 1 ), ( $X^{(N-1)}$ - 1 )%N = 0.
+If N is prime, then for X ( 1 < X < N - 1 ), ( X^(N-1) - 1 )%N = 0.
