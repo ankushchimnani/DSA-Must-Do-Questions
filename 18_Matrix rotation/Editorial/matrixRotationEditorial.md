@@ -44,7 +44,11 @@ The first cycle, consists of elements `1 2 3 6 9 8 7 4` , and after moving them 
 
 ### Space Complexity:
 
-`O(1)`,as no extra space is required.
+`O(n*n)`, space required for taking the input.
+
+`O(1)`, required extra space.
+
+Overall : `O(n*n)`.
 
 ## Alternate Solution:
 A solution that requires extra space has been mentioned in the detailed explanation
