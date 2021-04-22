@@ -41,6 +41,7 @@ Check for rooms with overlapping intervals.
 
 * Pseudo code:
   
+  ```python
   intervals[N] // intervals array of N meetings
   
   sort( intervals, intervals + N ); // sorting the array in non decreasing order of meeting's start time
@@ -62,7 +63,7 @@ Check for rooms with overlapping intervals.
    else
    
       print("true");
-
+  ```
 * Example -
  
   intervals = [ [0,30], [5,10], [15,20] ].
