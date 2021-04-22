@@ -48,7 +48,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
 * Pseudo code:
   
   // Method 1
-  
+  ```python
   Stack S1, S2;
   TOP1, TOP2;
   
@@ -78,11 +78,11 @@ One stack can be used for enqueue operations, while the other one can be used fo
     X = S1[TOP1];
     TOP1--;
   }
-
-}
-
+  ```
+ 
 // Method 2
   
+  ```python
   Stack S1, S2;
   TOP1, TOP2;
   
@@ -106,7 +106,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   TOP2--;
  
   }
- 
+  ```
 * Example -
   
   // Only Method 2 is shown
