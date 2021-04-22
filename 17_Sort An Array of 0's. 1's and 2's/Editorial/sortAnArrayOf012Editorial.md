@@ -26,6 +26,7 @@ Count the number of 0's, 1's, and 2's.
 
 * Pseudo code:
   
+  ```python
   A[N]; // Array of size N
 
   x = 0, y = 0, z = 0; // Number of occurrences of 0, 1 and 2.
@@ -60,6 +61,7 @@ Count the number of 0's, 1's, and 2's.
 
       arr[idx++] = 2;
 
+  ```
 * Example -
  
   N = 6, A = [0, 1, 2, 0, 1, 2];
@@ -84,6 +86,8 @@ Entire array needs to be traversed only once to count the required occurrences o
 `O(N)`, where N is the size of array.
 
 No extra space is required.
+
+Overall : `O(N)`
 
 ### Alternate Solution:
 
