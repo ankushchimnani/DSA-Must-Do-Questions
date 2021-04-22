@@ -51,6 +51,10 @@ To find out the upperbound and lowerbound of the array, binary search is to be u
 ### **Time Complexity**:
 The time complexity will be O(log(N)), where N is the size of the array.
 ### **Space Complexity**:
-No extra space is required, therefore, space complexity will be O(1)
+O(N), space required to take the input.
+
+O(1), extra spce required.
+
+Overall : O(N).
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
