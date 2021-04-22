@@ -113,4 +113,8 @@ We define L(i, j) as
 
 ### Space Complexity
 
-The space complexity is O(1).
+O(n), space required to take the input.
+
+O(1), extra space required.
+
+Overall : O(n).
