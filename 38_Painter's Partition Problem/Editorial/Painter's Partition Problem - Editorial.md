@@ -41,7 +41,11 @@ We need to find the time of that first Yes which can be implemented using binary
 O(n * log(sum of the lenghts)) ~ O(n*log(n)) per testcase.
 
 ### **Space Complexity**:
-No extra space required for processing, therefore O(1) space per testcase.
+O(n), space required to take the input.
+
+O(1), extra space required.
+
+Overall : O(n)
 
 ### **Alternate Solutions**:
 None.
