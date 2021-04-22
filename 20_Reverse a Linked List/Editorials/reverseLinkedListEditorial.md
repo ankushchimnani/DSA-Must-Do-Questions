@@ -49,7 +49,11 @@ For example,given the linked list `1 -> 2 -> 3`, intitially, the current node wi
 
 ### Space Complexity:
 
+`O(n)`, space required for taking the input.
+
 `O(1)` for each operation, as no extra space is required.
+
+Overall : `O(n)`
 
 ## Alternate Solution:
 None.
