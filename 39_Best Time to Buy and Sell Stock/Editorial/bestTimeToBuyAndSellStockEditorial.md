@@ -24,7 +24,7 @@ Try maximising the difference between prices of two days.
 * Hence it is optimal to determine for all prices[j] ( 1 <= j <= N ) the minimum value of prices[i] for all i < j. This can be easily done by repeated updation of the minimum cost of stocks. The maximum among all the values of prices[j] - (min stock price) for all j ( 1 < j <= N ) will fetch the optimal result.
 
 * Pseudo code:
-  
+  ```python
   N; // Number of days 
 
   prices[N]; // stock prices
@@ -45,7 +45,7 @@ Try maximising the difference between prices of two days.
    }
   
   print(max_profit);    
-
+  ```
 * Example -
  
   N = 6, prices = [7,1,5,3,6,4]
@@ -74,7 +74,7 @@ Only a single iteration over the prices array is required.
 
 ### Space Complexity:
 
-`O(N)`.
+`O(N)`, where N is the size of array.
 
 No extra space is required.
 
