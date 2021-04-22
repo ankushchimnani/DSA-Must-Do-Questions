@@ -80,7 +80,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   }
   ```
  
-// Method 2
+  // Method 2
   
   ```python
   Stack S1, S2;
