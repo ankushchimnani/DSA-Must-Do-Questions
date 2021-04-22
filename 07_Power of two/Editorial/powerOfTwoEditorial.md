@@ -19,7 +19,8 @@ Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
 * Hence to check, it is optimal to iteratively divide Z by 2, keeping a check that whether at each step Z is divisible by 2 or not. If Z gets reduced to 1, then Z is a power of 2.
 
 * Pseudo code:
-  
+
+  ```python
   while( Z%2 == 0){
 	
 	Z = Z/2;
@@ -30,6 +31,8 @@ Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
   
   else
 	"Given number is not a power of 2";
+	
+  ```
 
 * Example:
   
