@@ -24,6 +24,11 @@ In this question we would essentially apply a modified version of binary search 
 ### **Time Complexity**:
 Same as Binary Search  O(logN)
 ### **Space Complexity**:
-O(1). No extra space is required.
+O(n), space required to take the input
+
+O(1), extra space required.
+
+Overall : O(n)
+
 ### **Alternate Solution**:
 Linear Search will result in TLE for some cases.
