@@ -34,11 +34,8 @@ We are asked to calculate all the possible permutations, so we may think of usin
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
+`O(N)`, Extra call stack memory required.
 
-`O(N)`, Auxiliary space.
-
-Overall : `O(N)`.
 
 ### Alternate Solution:
 
