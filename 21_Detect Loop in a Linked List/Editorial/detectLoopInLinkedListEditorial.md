@@ -30,11 +30,8 @@ This method is called the [Floyd's Cycle Finding Algorithm]
 
 ### Space Complexity:
 
-`O(n)`, space required to take the input.
+`O(1)` , no extra space is required.
 
-`O(1)` for each operation, as no extra space is required.
-
-Overall : `O(n)`
 
 ## Alternate Solution:
 You can maintain a set of all the node's data iterated, If there's any repetition then return true. The space complexity of this solution is `O(N)`, as this solution uses a set.
