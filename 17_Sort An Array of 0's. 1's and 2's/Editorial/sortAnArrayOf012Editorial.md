@@ -63,7 +63,7 @@ Count the number of 0's, 1's, and 2's.
 
   ```
 * Example -
- 
+  ```python
   N = 6, A = [0, 1, 2, 0, 1, 2];
   
   Number of 0's occurred = 2.
@@ -73,7 +73,7 @@ Count the number of 0's, 1's, and 2's.
   Number of 2's occurred = 2.
 
   Hence sorted array will be: [ 0, 0, 1, 1, 2, 2 ].
-  
+  ```
 
 ### Time Complexity:
 
@@ -83,11 +83,7 @@ Entire array needs to be traversed only once to count the required occurrences o
 
 ### Space Complexity:
 
-`O(N)`, where N is the size of array.
-
-No extra space is required.
-
-Overall : `O(N)`
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
