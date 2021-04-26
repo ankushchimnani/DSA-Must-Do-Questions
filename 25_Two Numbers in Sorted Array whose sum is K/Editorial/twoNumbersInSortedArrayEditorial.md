@@ -32,8 +32,7 @@ For example, if the given array is `array = [2,7,11,15]`, and the value of `K = 
 The time complexity will be `O(N)`, where N is the size of the array.
 
 ### **Space Complexity**:
-No extra space is required, therefore, auxillary space complexity will be `O(1)`.
-Overall space complexity is `O(N)`, where N is the size of array which is required to take the input.
+`O(1)`, No extra space is required.
 
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
