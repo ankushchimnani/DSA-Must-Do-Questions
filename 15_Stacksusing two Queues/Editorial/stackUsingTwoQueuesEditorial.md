@@ -39,7 +39,7 @@ One queue can be used for push operations, while the other one can be used for p
 * Pseudo code:
   
   // Method 1
-  
+ ```python 
  QUEUE Q1, Q2;
 
  
@@ -79,8 +79,10 @@ One queue can be used for push operations, while the other one can be used for p
  F1++;
 
  }    
- 
+ ```
  // Method 2
+ 
+ ```python
   
  QUEUE Q1, Q2;
 
@@ -112,11 +114,11 @@ One queue can be used for push operations, while the other one can be used for p
  F1++;
 
  } 
- 
+ ```
 * Example -
   
   // Only Method 2 is shown
- 
+  ```python
   q1, q2 // Two required queues
 
   push(2), q1 = { 2 }, q2 = { }
@@ -134,6 +136,7 @@ One queue can be used for push operations, while the other one can be used for p
   push(4), q1 = { }, q2 = { 2, 4 },  q1 to be treated as q2 and vice versa.
 
   pop(),   q1 = { 2 }, q2 = { 4 }. Top of stack is front of q2 = 4. After top of stack is popped, q1 = { 2 }, q2 = { }.
+  ```
 
 ### Time Complexity:
 
