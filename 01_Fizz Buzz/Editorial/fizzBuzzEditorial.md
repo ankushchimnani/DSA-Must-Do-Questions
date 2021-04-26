@@ -44,12 +44,16 @@ else
 ```
 
 - Example -
-
+```python
     N = 10.
 
-    Numbers 3, 6 and, 9 are called as "Fizz" while 5 and 10 are "Buzz". Rest all remain same. Hence output is:
+    Numbers 3, 6 and, 9 are called as "Fizz" while 5 and 10 are "Buzz". 
+    
+    Rest all remain same. Hence output is:
 
     1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz
+    
+```
 
 ### Time Complexity:
 
