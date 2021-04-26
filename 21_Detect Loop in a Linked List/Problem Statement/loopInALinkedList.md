@@ -17,7 +17,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 __O__(N), where N is the number of elements in the linked list. Only one traversal of the loop should be needed.
 
 
-#### **Expected Space Complexity**
+#### **Extra Space Complexity**
 __O__(1). i.e. Constant Space Complexity
 
 #### **Constraints**
