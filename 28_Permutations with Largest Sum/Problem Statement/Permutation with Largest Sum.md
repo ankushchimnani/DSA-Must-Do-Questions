@@ -17,8 +17,7 @@ __Note__: You need to find the permutaion to maximize the mentioned sum
 #### **Expected Time Complexity**
 __O__(N*logN), where N is the length of the array
 #### **Expected Space Complexity**
-__O__(1), constant space solution
-
+__O__(1), Auxiliary space.
 #### **Constraints**
     1<= N <= 10^5
     1<= arr[i] <= 10^6
