@@ -28,7 +28,7 @@ We are going to use index of elements in dequeue instead of the array elements.
 
 ### Time Complexity:
 
-`O(n)`, where `N` is the size of array
+`O(n)`, where `n` is the size of array
 
 ### Space Complexity:
 
