@@ -18,7 +18,7 @@ The linked list given in the sample test case, is the same read whether forwards
 __O__(N), where N is the number of elements in the linked list.
 
 
-#### **Expected Space Complexity**
+#### **Extra Space Complexity**
 
 __O__(N), where N is the number of elements in the linked list.
  
