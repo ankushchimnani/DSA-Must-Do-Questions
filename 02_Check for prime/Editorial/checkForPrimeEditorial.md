@@ -49,7 +49,7 @@ Note - You can check for all X ( 1 <= X <= N ), whether N%X equals 0 or not and 
     ```
 
 - Example:
-
+    ```python
     Let N = 5.
 
     Hence sqrt(N) = 2 ( lower bound ).
@@ -73,7 +73,7 @@ Note - You can check for all X ( 1 <= X <= N ), whether N%X equals 0 or not and 
     Check for 2 : 6%2 equals0 0, hence 6%(6/2) is also 0. Hence F = F + 2 => F = 4.
 
     Since F = 4, hence N = 6, is not prime.
-
+    ```
 ### Time Complexity:
 
 `O(sqrt(N))`, where `N` given number.
