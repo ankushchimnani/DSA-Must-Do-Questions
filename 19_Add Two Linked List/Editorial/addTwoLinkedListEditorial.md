@@ -11,8 +11,8 @@ In this question, we are given two numbers in the form of a linked list, and we 
 
 ### **Detailed Explanation**:
 In computer science, a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.
-The structure of the linked list can be understood from the following figure 
-[this](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.programiz.com%2Fdsa%2Flinked-list&psig=AOvVaw1xXTcwLIx-ApYb1Mqkhqtx&ust=1617783257735000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODSoriW6e8CFQAAAAAdAAAAABAJ)
+The structure of the linked list can be understood from the following article
+[Linked List](https://en.wikipedia.org/wiki/Linked_list)
 
 Given two linked list representing two numbers, we have to sum the numbers and print the resultant linked list in which will store the sum of the numbers. A straight forward approach is to traverse both the linked list till the both of them are exhausted, and store the sum formed by individual nodes. Care should be taken that if the value of the inidividual nodes exceeds 10, then the carry should be forwarded to the next node. 
 
