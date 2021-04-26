@@ -65,7 +65,7 @@ Check for rooms with overlapping intervals.
       print("true");
   ```
 * Example -
- 
+  ```python
   intervals = [ [0,30], [5,10], [15,20] ].
   
   After sorting based on starting values it becomes : [ [0,30], [5,10], [15,20] ].
@@ -73,7 +73,7 @@ Check for rooms with overlapping intervals.
   Iteration 1: end[1] = 30 and start[2] = 5. Since 30>5, it i impossible to attend both the meetings together.
 
   Hence the answer is false.
-
+  ```
 ### Time Complexity:
 
 `O(Nlog(N))`.
@@ -82,9 +82,7 @@ Time required to sort the array.
 
 ### Space Complexity:
 
-`O(N)`, where N is the number of meetings.
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
