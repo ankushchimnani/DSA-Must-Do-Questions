@@ -41,4 +41,4 @@ For example, given an array `A = [1,3,3,2,4]` has 5 elements. Therefore, the sum
 Overall : `O(N)`.
 
 ## Alternate Solution:
-A brute force has been mentioned in the detailed explanation
+A brute force solution has been mentioned in the detailed explanation
