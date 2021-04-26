@@ -34,7 +34,7 @@
     ```
 
 - Example :
-
+    ```python
     Let N be 5.
 
     For i = 31 : 5&(2^(31)) = 0 , hence output : 0
@@ -102,7 +102,7 @@
     For i =  0 : 5&(2^( 0)) = 1 , hence output : 1
 
     Hence the binary representation of 5 is 00000000000000000000000000000101.
-
+    ```
 ### Time Complexity:
 
 `O(1)`.
