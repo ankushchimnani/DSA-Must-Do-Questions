@@ -67,7 +67,7 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
   ```        
 
 * Example -
- 
+  ```python
   Let A = [ 1, 4, 3, 5, 2 ].
 
   
@@ -106,7 +106,7 @@ For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N
   S[TOP] < A[4], hence nearest smaller element of A[4] is 1.
 
   Hence nearest neighbour elements: [ -1, 1, 1, 3, 1 ].
-
+  ```
 ### Time Complexity:
 
 `O(N)`.
@@ -115,11 +115,8 @@ Each element of array A gets pushed and popped from the stack at most once.
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
-
 `O(N)`, Extra space required - At most N elements can be there inside the stack.
 
-Overall : `O(N)`
 
 ### Alternate Solution:
 
