@@ -18,7 +18,7 @@ Hence 5th fibonacci is: 3
 __O__(N)
 
 #### **Expected Space Complexity**
-__O__(1), i.e., constant space complexity.
+__O__(N), Auxillary space complexity.
 
 #### **Constraints**
 	1 <= N <= 100000
