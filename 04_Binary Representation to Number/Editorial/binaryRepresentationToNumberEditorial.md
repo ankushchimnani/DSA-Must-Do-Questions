@@ -47,7 +47,7 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
   }
   ```
 * Example -
- 
+  ```python
   Let B = 00000000000000000000000000000111.
   
   Let D be the decimal value of B initialised to 0;
@@ -63,7 +63,7 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
   Similary for all i ( 4 <= i < 32 ) B[i] is 0. Hence no more change in value of D will take place.
 
   Hence value of D is equal to 7.
-
+  ```
 ### Time Complexity:
 
 `O(1)`.
