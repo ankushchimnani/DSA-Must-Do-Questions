@@ -32,11 +32,8 @@ We are going to use index of elements in dequeue instead of the array elements.
 
 ### Space Complexity:
 
-`O(n), space required for taking the input.
+`O(n-k+1)`, where `n` is the size of array and `k` is size of window
 
-`O(n-k+1)`, extra space required, where `N` is the size of array and `k` is size of window
-
-Overall : `O(n)`
 
 ### Alternate Solution:
 
