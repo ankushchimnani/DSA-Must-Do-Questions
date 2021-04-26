@@ -75,7 +75,7 @@ Check for every pair of array elements to find out the maximum water that can be
   }
   ```
 * Example -
- 
+  ```python
   Let N = 9, array A =  [1,8,6,2,5,4,8,3,7].
   
   First = 1, Last = 9.
@@ -99,7 +99,7 @@ Check for every pair of array elements to find out the maximum water that can be
   Iteration 8: Area between A[2] and A[3] = 6, A[2]>A[1], hence move last one step back. First = 2, Last = 2, MAX_AREA = 49.
  
   Hence the maximum water for all iterations is 49.
-
+  ```
 ### Time Complexity:
 
 `O(N)`, where N is the size of the array.
@@ -108,11 +108,8 @@ Maximum of N iterations are possible for the two pointers approach.
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
+`O(1)`, No extra space is required.
 
-`O(1)`, Extra space required.
-
-Overall : `O(N)`.
 
 ### Alternate Solution:
 
