@@ -115,11 +115,7 @@ Each element of array A gets pushed and popped from the stack at most once.
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
-
-`O(N)`, Extra space required - At most N elements can be there inside the stack.
-
-Overall : `O(N)`
+`O(N)`,At most N elements can be there inside the stack.
 
 ### Alternate Solution:
 
