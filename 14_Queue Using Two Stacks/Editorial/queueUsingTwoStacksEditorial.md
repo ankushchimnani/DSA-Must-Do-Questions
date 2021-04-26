@@ -108,7 +108,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   }
   ```
 * Example -
-  
+  ```python
   // Only Method 2 is shown
   
   N = 5
@@ -127,7 +127,7 @@ One stack can be used for enqueue operations, while the other one can be used fo
   
   Query 5: Query type = 2. S1 = { 4 }, S2 = { 3 }. Since S2 is not empty, front element = 3, updated S2 = { }.
   
-
+  ```
 ### Time Complexity:
 
 Method 1:
