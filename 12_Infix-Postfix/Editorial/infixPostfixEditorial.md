@@ -42,37 +42,37 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
  
   At the end P contains the required postfix expression.
 
-* Example -
+*Example -
  
-  Let infix expression I = A+B*C/(E-F)
+    Let infix expression I = A+B*C/(E-F)
   
-  Let S be the stack required and P be the postfix expression.
+    Let S be the stack required and P be the postfix expression.
 
-  Scanning I left to right:
+    Scanning I left to right:
 
-  First character : A -> S = { }, P = A
-  
-  Next character : + -> S = { + }, P = A.
-  
-  Next character : B -> S = { + }, P = AB.
-  
-  Next character : * -> S = { +* }, P = AB.
-  
-  Next character : C -> S = { +* }, P = ABC.
-  
-  Next character : / -> S = { +/ }, P = ABC*.
-  
-  Next character : ( -> S = { +/( }, P = ABC*.
-  
-  Next character : E -> S = { +/( }, P = ABC*E.
-  
-  Next character : - -> S = { +/(- }, P = ABC*E.
-  
-  Next character : F -> S = { +/(- }, P = ABC*EF.
-  
-  Next character : ) -> S = { +/ }, P = ABC*EF-.
-  
-  Pop all from stack hence P = ABC*EF-/+
+    First character : A -> S = { }, P = A
+
+    Next character : + -> S = { + }, P = A.
+
+    Next character : B -> S = { + }, P = AB.
+
+    Next character : * -> S = { +* }, P = AB.
+
+    Next character : C -> S = { +* }, P = ABC.
+
+    Next character : / -> S = { +/ }, P = ABC*.
+
+    Next character : ( -> S = { +/( }, P = ABC*.
+
+    Next character : E -> S = { +/( }, P = ABC*E.
+
+    Next character : - -> S = { +/(- }, P = ABC*E.
+
+    Next character : F -> S = { +/(- }, P = ABC*EF.
+
+    Next character : ) -> S = { +/ }, P = ABC*EF-.
+
+    Pop all from stack hence P = ABC*EF-/+
   
   
 
