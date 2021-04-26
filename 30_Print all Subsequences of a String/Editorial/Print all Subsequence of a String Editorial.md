@@ -32,11 +32,7 @@ In every backtracking problem , there are two things to keep in mind :
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input
-
-`O(N)`, Auxiliary space
-
-Overall : `O(N)`
+`O(N)`, Extra space required for call stack.
 
 ### Alternate Solution:
 
