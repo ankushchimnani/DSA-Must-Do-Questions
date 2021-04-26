@@ -89,6 +89,7 @@ This approach leads to a time complexity of O(N*N) which is not desirable.
     ```
 
 - Example -
+    ```python
     1. N = 6, S : [()]{}
 
         Stack Stk;
@@ -106,7 +107,8 @@ This approach leads to a time complexity of O(N*N) which is not desirable.
         for i = 5, S[5] = '}', Stk[Top] = '{', which matches with S[5], hence pop the top of stack. Stk is empty.
 
         After processing the string Stk is empty and out string is balanced.
-
+    ```
+    ```python
     2. N = 4, S : [(])
 
         Stack Stk;
@@ -118,7 +120,7 @@ This approach leads to a time complexity of O(N*N) which is not desirable.
         for i = 2, S[2] = ']', Stk[Top] = '(', which doesn't matches with S[2], hence flag = 1, break the process.
 
         Since flag value is 1 the string is not balanced.
-
+    ```
 ### Time Complexity:
 
 `O(N)`. where N is the length of the string.
