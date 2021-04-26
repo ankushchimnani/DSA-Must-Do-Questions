@@ -37,11 +37,8 @@ After that, all the nodes will be traversed again, and compared with the top of 
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
+`O(N)`, Maximum N nodes of linkedlist can be inserted into the stack.
 
-`O(N)`, Extra space required - Maximum N nodes of linkedlist can be inserted into the stack.
-
-Overall : `O(N)`.
 
 ## Alternate Solution:
 A two pointer approach can be thought of, if the structure of the node is tweaked a little.
