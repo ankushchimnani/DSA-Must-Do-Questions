@@ -32,7 +32,7 @@ In every backtracking problem , there are two things to keep in mind :
 
 ### Space Complexity:
 
-`O(N)`, where `N` is the size of string
+`O(N)`, Auxiliary space
 
 ### Alternate Solution:
 
