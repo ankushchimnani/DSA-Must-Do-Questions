@@ -113,7 +113,7 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
        
   ```
 * Example -
- 
+  ```python
   gas = [1,2,3,4,5]
   
   cost = [3,4,5,1,2]
@@ -131,7 +131,7 @@ Try each station X, ( 1 <= X <= N ) as the starting station.
   Iteration 5: L + gas[5] - cost[5] = 6 => S = 4, L = 6. T = 0
 
   Since, T is non-negative, hence S = 4, is our starting station.
-
+  ```
 ### Time Complexity:
 
 `O(N)`. where N is the size of the array.
@@ -140,9 +140,7 @@ The entire array is iterated only once.
 
 ### Space Complexity:
 
-`O(N)`, where N is the number of stations.
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
