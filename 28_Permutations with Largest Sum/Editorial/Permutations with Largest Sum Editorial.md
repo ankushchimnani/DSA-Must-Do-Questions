@@ -60,11 +60,8 @@ Nlog(N) is required to sort the array A.
 
 ### Space Complexity:
 
-`O(N)`, Space required to take the input.
+`O(1)`, No extra space required.
 
-`O(1)`, Extra space required.
-
-Overall : `O(N)`.
 
 ### Alternate Solution:
 
