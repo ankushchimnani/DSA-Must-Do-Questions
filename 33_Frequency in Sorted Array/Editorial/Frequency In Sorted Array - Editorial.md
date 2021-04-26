@@ -53,7 +53,7 @@ The time complexity will be O(log(N)), where N is the size of the array.
 ### **Space Complexity**:
 O(N), space required to take the input.
 
-O(1), extra spce required.
+O(1), extra space required.
 
 Overall : O(N).
 ### **Alternate Solution**:
