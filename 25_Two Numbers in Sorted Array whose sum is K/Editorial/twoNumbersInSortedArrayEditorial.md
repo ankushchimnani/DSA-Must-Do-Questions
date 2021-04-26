@@ -33,7 +33,7 @@ The time complexity will be `O(N)`, where N is the size of the array.
 
 ### **Space Complexity**:
 No extra space is required, therefore, auxillary space complexity will be `O(1)`.
-Overall space complexity is `O(N)`, where N is the size of array.
+Overall space complexity is `O(N)`, where N is the size of array which is required to take the input.
 
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
