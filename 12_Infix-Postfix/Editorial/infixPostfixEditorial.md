@@ -43,7 +43,7 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
   At the end P contains the required postfix expression.
 
 * Example -
- 
+  ```python
   Let infix expression I = A+B*C/(E-F)
   
   Let S be the stack required and P be the postfix expression.
@@ -73,7 +73,7 @@ Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix e
   Next character : ) -> S = { +/ }, P = ABC*EF-.
   
   Pop all from stack hence P = ABC*EF-/+
-  
+  ```
   
 
 ### Time Complexity:
