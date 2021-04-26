@@ -18,7 +18,7 @@ Given an array of distinct integers of size N, the task is to generate and print
 #### **Expected Time Complexity**
 __O__(N*N!), where N is the size of the array
 #### **Expected Space Complexity**
-__O__(N), where N is the size of array
+__O__(N), Auxiliary space
 
 #### **Constraints**
 	1 <= N <= 6
