@@ -15,15 +15,16 @@ In the function you'll have to complete, you'll be provided a pointer to the hea
 This method is called the [Floyd's Cycle Finding Algorithm]
 
 ### *Pseudo Code*
-	function detectLoopInLinkedList(Node head)
-	* Node slow = head
-	* Node fast = head
-	* while(fast != null && fast.next != null)
-		* slow = slow.next
-		* fast = fast.next.next
-		* if (slow == fast) return true
-	* return false
-
+```python
+function detectLoopInLinkedList(Node head)
+    Node slow = head
+    Node fast = head
+    while(fast != null && fast.next != null)
+	slow = slow.next
+	fast = fast.next.next
+	if (slow == fast) return true
+    return false
+```
 ### Time Complexity:
 
 `O(n)` for each operation, where n is the length of the linked list.
@@ -33,4 +34,4 @@ This method is called the [Floyd's Cycle Finding Algorithm]
 `O(1)`, no extra space is required.
 
 ## Alternate Solution:
-You can maintain a set of all the node's data iterated, If there's any repetition then return true. The space complexity of this solution is `O(N)`, as this solution uses a set.
+You can maintain a set of all the node's data iterated, If there's any repetition then return true. The space complexity of this solution is `O(n)`, as this solution uses a set.
