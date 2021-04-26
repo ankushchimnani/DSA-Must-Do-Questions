@@ -35,7 +35,7 @@ Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
   ```
 
 * Example:
-  
+  ```python
   Let Z = 8.
 
   Iteration 1: 8%2 equals 0, hence Z = 8/2 = 4.
@@ -55,7 +55,7 @@ Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
   Iteration 2: 3%2 equals 1, loop ends.
   
   Since Z is not equal to 1, hence the given number is not a power of 2.
- 
+  ```
 ### Time Complexity:
 
 `O(log(N))`, where `N` given number.
