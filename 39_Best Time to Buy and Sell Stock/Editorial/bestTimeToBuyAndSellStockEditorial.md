@@ -47,7 +47,7 @@ Try maximising the difference between prices of two days.
   print(max_profit);    
   ```
 * Example -
- 
+  ```python
   N = 6, prices = [7,1,5,3,6,4]
   
   min_price, max_profit.
@@ -65,7 +65,7 @@ Try maximising the difference between prices of two days.
   Iteration 6: prices[6] = 4, min_price = 1, max_profit = 5.
 
   Hence maximum profit obtained is 5.
-
+  ```
 ### Time Complexity:
 
 `O(N)`, where N is the number of days to buy and sell stocks.
@@ -74,9 +74,7 @@ Only a single iteration over the prices array is required.
 
 ### Space Complexity:
 
-`O(N)`, where N is the size of array.
-
-No extra space is required.
+`O(1)`,No extra space is required.
 
 ### Alternate Solution:
 
