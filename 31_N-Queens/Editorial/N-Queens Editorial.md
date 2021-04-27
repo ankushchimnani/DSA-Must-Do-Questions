@@ -1,9 +1,9 @@
-# N-Queens - Editorial
+### N-Queens - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Recursion, Backtracking
-
+---
 ### Hint
 
 Place queens one by one in different columns and check for the possibility of attack on another queen.
@@ -14,7 +14,7 @@ Place queens one by one in different columns and check for the possibility of at
 
 ### Detailed Explanation
 
-* So initially we are having N*N unattacked cells where we need to place N queens. Let's place the first queen at a cell (i,j), so now the number of unattacked cells is reduced, and number of queens to be placed is N-1. Place the next queen at some unattacked cell. This again reduces the number of unattacked cells and number of queens to be placed becomes N-2. Continue doing this, as long as following conditions hold.
+* So initially we are having NxN unattacked cells where we need to place N queens. Let's place the first queen at a cell (i,j), so now the number of unattacked cells is reduced, and number of queens to be placed is N-1. Place the next queen at some unattacked cell. This again reduces the number of unattacked cells and number of queens to be placed becomes N-2. Continue doing this, as long as following conditions hold.
 
     1. The number of unattacked cells is not 0.
     2. The number of queens to be placed is not 0.

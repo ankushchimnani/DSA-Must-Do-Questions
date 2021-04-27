@@ -1,9 +1,9 @@
-# Container with most water - Editorial
+### Container with most water - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Two pointers.
-
+---
 ### Hint
 
 Check for every pair of array elements to find out the maximum water that can be held. 

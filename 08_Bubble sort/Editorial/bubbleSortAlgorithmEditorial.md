@@ -20,13 +20,14 @@ For example, if the given array is `array = [5,1,6,3,7]`, after different steps 
 A slight optimization to the bubble sort algorithm can be, that if the count of swaps in a particular iteration is zero, then we can concur, that we have obtained the sorted array, and break out of the loop, and return the sorted array. 
 
 ### **Pseudo Code**
-	* int size //size of the array
-	* int[] arr //input Array
-	* for (int i=0;i<size - 1;i++)
-		* for (int j=0;j<size - i - 1;j++)
-			* if (a[j] > a[j + 1]) swap(a[j],a[j+1])
-	* print arr 
-
+```python
+	int size //size of the array
+	int[] arr //input Array
+	for (int i=0;i<size - 1;i++)
+	    for (int j=0;j<size - i - 1;j++)
+		if (a[j] > a[j + 1]) swap(a[j],a[j+1])
+	print arr 
+```
 ### **Time Complexity**:
 The time complexity will be O(N^2) as there are two nested loops.
 

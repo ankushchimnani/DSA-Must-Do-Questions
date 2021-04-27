@@ -1,10 +1,10 @@
 
-# Infix to postfix - Editorial
+### Infix to postfix - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Stacks.
-
+---
 ### Hint
 
 Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix expression. 
@@ -84,9 +84,8 @@ All characters can get push and popped from stack at most once.
 
 ### Space Complexity:
 
-`O(N)`, where N is the length of infix expression.
+`O(M)`, where M is the number of operators in Infix expression.
 
-Maximum number of characters inside is stack is N.
 
 ### Alternate Solution:
 None

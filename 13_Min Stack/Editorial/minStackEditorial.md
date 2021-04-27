@@ -1,9 +1,9 @@
-# Min stack - Editorial
+### Min stack - Editorial
 
 ### Difficulty:  Hard
 
 ### Prerequisite: Stacks.
-
+---
 ### Hint
 
 If A < B then 2A - B < A. 
@@ -128,14 +128,11 @@ If A < B then 2A - B < A.
 
 ### Time Complexity:
 
-`O(1)`.
-
+`O(1)`, for each operation
 
 ### Space Complexity:
 
-`O(N)`, where N is the size of the stack.
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 

@@ -1,9 +1,9 @@
-# Check if the given number is a power of two - Editorial
+### Check if the given number is a power of two - Editorial
 
 ### Difficulty:  Easy
 
 ### Prerequisite:  Maths.
-
+---
 ### Hint
 
 Numbers like 1, 2, 4, 8, 16, ... are powers of 2.
@@ -64,9 +64,7 @@ It will take maximum of `log(N)` operations to check of power of 2.
 
 ### Space Complexity:
 
-`O(1)`.
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
