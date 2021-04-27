@@ -1,10 +1,10 @@
-# Cutting Rod
+### Cutting Rod
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Pre-requisite : Recursion, DP
-
-## Hint :
+### Pre-requisite : Recursion, DP
+---
+### Hint :
 
 - Find out all possible ways you can make a cut by considering each unit length.
 
@@ -14,13 +14,14 @@
 - One by One Partition the given rod of length n into two parts i and n-i.
 - Recur the rod length n-i and find maximum of all values.
 
-## Detail Explanation :
+### Detail Explanation :
 
-## 1. Brute Force
+### 1. Brute Force
 
 - Given a rod of some size and we have to cut it into parts and sell in such a way that you get maximum revenue out of it.
 - Given Piece Size 1 to n and price P(i)
-- For Example :
+  ```python
+  For Example :
 
     Piece of size(x)       Price P(x)
 
@@ -29,7 +30,7 @@
             2                   5
 
             3                   8
-
+   ```
 ![Cutting%20Rod%20fb54c14dfdff4b3ab82f028f3ee77504/Rods_cut.jpg](Cutting%20Rod%20fb54c14dfdff4b3ab82f028f3ee77504/Rods_cut.jpg)
 
 - **Calculating Max Revenue**
@@ -84,7 +85,7 @@ Ans : 2^n-1 , because there are n-1 places where we can choose to make cuts, and
 
 - The Space Complexity is O(1).
 
-## 2. Dynamic Programming
+### 2. Dynamic Programming
 
 - In above Approach, The computation time is very poor because a lot of sub-problems.
 - In the recursion tree, we can observe that we are doing a lot of work because we are computing the same things again and again.
