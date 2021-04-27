@@ -1,23 +1,23 @@
-# Coin Change Problem - Editorial
+### Coin Change Problem - Editorial
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Prerequisite : Recursion, DP
-
-## Hint :
+### Prerequisite : Recursion, DP
+---
+### Hint :
 
 - Perform Recursion to check if the total can be reached by choosing the coin or not for each coin of given dominations . If choosing the current coin results in the solution, then update the number of ways.
 
-## Short Explanation :
+### Short Explanation :
 
 - Consider any optimal solution to making change for n cents using coins of denominations d1, d2, . . . , dk.
 - Consider breaking that solution into two different pieces along any coin boundary. Suppose that the “left-half” of the solution amounts to b cents and the “right-half” of the solution amounts to n − b cents, as shown below.
 
 ![Coin%20Change%20Problem%20-%20Editorial%20d9a49c0a05574afb85e805610d9f68e8/breaking_CoinChange.png](Coin%20Change%20Problem%20-%20Editorial%20d9a49c0a05574afb85e805610d9f68e8/breaking_CoinChange.png)
 
-## Detail Explanation :
+### Detail Explanation :
 
-## Approach  1 : Brute Force
+### Approach  1 : Brute Force
 
 ### Intuition
 
@@ -47,17 +47,19 @@
 
     Minimum number of coins to get S = 4 is 2.
 
-    - **Complexity Analysis:**
+    ### Time Complexity
 
-        In the worst case every coin denomination **Ci** could have at most **S/Ci** values. Therefore the number of possible combinations is : 
+    In the worst case every coin denomination **Ci** could have at most **S/Ci** values. Therefore the number of possible combinations is : 
 
-          S/C1 * S/C2 * S/C3 ...................* S/Cn  =  S^n / C1*C2*C3..............*Cn
+    S/C1 * S/C2 * S/C3 ...................* S/Cn  =  S^n / C1*C2*C3..............*Cn
 
-          **Time Complexity = O(S^n)**
+    Time Complexity = `O(S^n)`
 
     In worst case the maximum depth of recursion is n.
 
-    **Space Complexity = O(n)**
+    ### Space Complexity 
+    
+    `O(n)`, extra space for call stack.
 
       
 
@@ -87,12 +89,13 @@ Coin change problem can be divided into 2 sub problems.
 
 ![Coin%20Change%20Problem%20-%20Editorial%20d9a49c0a05574afb85e805610d9f68e8/Psuedo_Code_Coin.png](Coin%20Change%20Problem%20-%20Editorial%20d9a49c0a05574afb85e805610d9f68e8/Psuedo_Code_Coin.png)
 
-### Complexity Analysis
-
-1. **Time Complexity: O(S*n)**
+### Time Complexity
+`O(S*n)`
 
 Where S is the given sum and n is the number of coins given.
 
-2. **Space Complexity: O(S)**
+### Space Complexity
+
+`O(S)`
 
 As we need storage till amount S to store the sum.
