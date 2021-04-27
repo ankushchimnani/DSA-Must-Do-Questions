@@ -1,6 +1,7 @@
 ### **Square Root of an integer - Editorial**
 ### **Difficulty**: Easy
 ### **Prerequisite: Binary Search**:
+---
 ### **Hint:**
 Binary search can be used to find the square root of an integer.
 
@@ -50,7 +51,9 @@ Limitation: Iterating through each element till we got the result.
 * If N is a perfect square then our answer is mid otherwise Root.
 * Handle the base cases for N=1 and N=0.
 
-Example 1: N=100 (A perfect square)
+### Example
+```python
+1: N=100 (A perfect square)
 
 Step 1: start = 1, end = 100, mid = (1+100)/2 = 50
 50 *50 = 2500 > 100 
@@ -72,7 +75,7 @@ Step 5: start = 7, end = 11 ,mid =9
 Step 6: start = 10, end =11 , mid =10
 As 10 * 10 = 100 return mid i.e. 10
 
-Example 2: N=110 (Not A perfect square)
+2: N=110 (Not A perfect square)
 
 Step 1: start = 1, end = 110, mid = (1+110)/2 = 55
 55 *55  > 110 
@@ -99,7 +102,7 @@ Step 7: start = 10, end =10 , mid =10
 
 Step 8: start = 11, end =10 , Loop end as start> end
 Return Root i.e. 10 . It is floor(sqrt(110))
-
+```
 
 ### **Time Complexity**:
 #### Recurrence : T(n) = T(n/2) + c
