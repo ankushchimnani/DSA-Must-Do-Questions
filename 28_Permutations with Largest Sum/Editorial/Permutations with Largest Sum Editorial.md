@@ -1,9 +1,9 @@
-# Permutation with Largest Sum - Editorial
+### Permutation with Largest Sum - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Sorting, greedy techniques.
-
+---
 ### Hint
 
 Let L be the largest array element. For what value of i ( 1 <= i <= N ), L*i has the greatest value? 
@@ -39,8 +39,8 @@ Let L be the largest array element. For what value of i ( 1 <= i <= N ), L*i has
 
 * Hence it is optimal to assign the greatest integer of array A to index N, next greatest to index N-1,..., smallest integer to index 1. 
 
-* Example -
- 
+### Example
+  ```python
   N = 2 and A is : [ 3, 4 ].
   
   It can be observed that:
@@ -48,10 +48,10 @@ Let L be the largest array element. For what value of i ( 1 <= i <= N ), L*i has
 
   Hence for N = 2, our lemma gives correct results.
   
-* Similarly for any value of N, the lemma is correct.
+ Similarly for any value of N, the lemma is correct.
   
-* The above results can be achieved just by sorting the entire array in non-decreasing order.
-
+ The above results can be achieved just by sorting the entire array in non-decreasing order.
+ ```
 ### Time Complexity:
 
 `O(Nlog(N))`, where `N` is the size of the array A.
