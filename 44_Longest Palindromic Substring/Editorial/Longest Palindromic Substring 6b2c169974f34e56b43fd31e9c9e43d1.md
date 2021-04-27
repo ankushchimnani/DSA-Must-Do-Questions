@@ -47,7 +47,7 @@ Given a string s, find the longest palindromic substring in s.
 
 No Extra Space is required
 
-Thus , The Space complexity is O(1)
+Thus , The Space complexity is `O(1)`
 
 ## Approach 2 : Dynamic Programming
 
@@ -77,11 +77,11 @@ We define L(i, j) as
 
 ### Time Complexity
 
-- The run time complexity is O(n^2)
+- The run time complexity is `O(n^2)`
 
 ### Space Complexity
 
-- The Space Complexity is O(n^2) To Store the table
+- The Space Complexity is `O(n^2)` To Store the table
 
 ## Approach 3 : Expand Around Centre
 
@@ -109,9 +109,9 @@ We define L(i, j) as
 
     For each centers , Expanding a string around its center will take O(n) time.
 
-    Thus, Overall Time Complexity : O(n^2)
+    Thus, Overall Time Complexity : `O(n^2)`
 
 ### Space Complexity
 
-O(1), no extra space required.
+`O(1)`, no extra space required.
 
