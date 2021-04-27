@@ -36,7 +36,7 @@
 
 - Generate All subsets of Coin Frequencies from our coin set C that adds up to the sum S.
 - Return the subset with minimum coins.
-
+    ```python
     **For Ex : C = [ 1,2,3 ]  and S = 4**
 
     All subsets with sum 4 are = {1,1,1,1}, {1,1,2}, {2,2}, {1,3}.
@@ -46,7 +46,7 @@
     Size of minimum subset = 2
 
     Minimum number of coins to get S = 4 is 2.
-
+    ```
     ### Time Complexity
 
     In the worst case every coin denomination **Ci** could have at most **S/Ci** values. Therefore the number of possible combinations is : 
