@@ -1,9 +1,9 @@
-# Balanced parenthesis - Editorial
+### Balanced parenthesis - Editorial
 
 ### Difficulty: Easy
 
 ### Prerequisite: Stacks.
-
+---
 ### Hint
 
 '(' will be balanced by ')', '[' by ']' and, '{' by '}'.
