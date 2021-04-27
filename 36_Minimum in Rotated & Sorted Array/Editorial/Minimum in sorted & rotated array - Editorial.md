@@ -19,13 +19,13 @@ If the array is not rotated and the array is in ascending order, then last eleme
 * We stop our search when we find the inflection point, when either of the two conditions is satisfied:
 	* nums[mid] > nums[mid + 1] Hence, mid+1 is the smallest.
 	* nums[mid - 1] > nums[mid] Hence, mid is the smallest.
-	* 
+	
 ### **Time Complexity**:
-O(logN), where N is the size of array.
+`O(logN)`, where N is the size of array.
 
 ### **Space Complexity**:
 
-O(1),no extra space required.
+`O(1)`,no extra space required.
 
 
 ### **Alternate Solution**:
