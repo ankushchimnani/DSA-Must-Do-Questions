@@ -1,10 +1,10 @@
-# Minimum Jumps - Editorial
+### Minimum Jumps - Editorial
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Pre-requisite : Recursion, DP
-
-## Hint :
+### Pre-requisite : Recursion, DP
+---
+### Hint :
 
 - Keep track of all possible jumps at each steps.
 
@@ -12,7 +12,7 @@
 
 - Calculate the no. of ways you can make the jump at each steps till end. After Calculating it, return the no. of ways jumps possible for last step.
 
-## Detail Explanation :
+### Detail Explanation
 
 ### Approach 1 : Brute Force
 
@@ -30,11 +30,11 @@ The recursion tree would be viewed like this :
 
 ![Minimum%20Jumps%20-%20Editorial%2028b57b66a1664ee0864f2fa34bd67b1a/Org_Chart_(1).jpg](Minimum%20Jumps%20-%20Editorial%2028b57b66a1664ee0864f2fa34bd67b1a/Org_Chart_(1).jpg)
 
-### Recursive Condition :
+### Recursive Condition
 
 - **minJumps(start, end) = MIN(minJumps(k, end) For all k that are reachable from start)**
 
-### Time Complexity :
+### Time Complexity
 
 - At any level, The maximum Branches of a node will be the maximum value present in an array.
 
@@ -50,8 +50,10 @@ The recursion tree would be viewed like this :
 - Total Recursive Calls in worst Case : N^K
     - Where N is the size of the array.
     - K is the Max branches possible.
-- Time Complexity : O(n^k)
-- Space Complexity : O(1)
+- Time Complexity : `O(n^k)`
+
+### Space Complexity
+`O(n)`, extra space required for stack.
 
 ### Approach 2 : Dynamic Programming
 
@@ -74,12 +76,12 @@ The recursion tree would be viewed like this :
 
                 **OPT[i] = min(OPT[i], OPT[j] + 1)**
 
-### Time Complexity :
+### Time Complexity
 
 - Since For each index, we are checking N possibilities i.e running loop n times.
-- **Time Complexity will be O(N^2)**
+- **Time Complexity will be `O(N^2)`**
 
 ### Space Complexity
 
 - We have used OPT[ ] array, to store optimum jumps at each index.
-- **Space Complexity will be O(N)**
+- **Space Complexity will be `O(N)`**
