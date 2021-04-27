@@ -3,7 +3,7 @@
 ### Difficulty: Easy
 
 ### Prerequisite: Maths, Bit manipulation.
-
+---
 ### Hint
 
 - A binary representation of any non-negative number N consists of only 0's and 1's.
