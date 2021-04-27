@@ -1,10 +1,10 @@
 
-# Infix to postfix - Editorial
+### Infix to postfix - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Stacks.
-
+---
 ### Hint
 
 Expression of the type AB+ ( Operand Opearand Operator ) is known as a postfix expression. 
