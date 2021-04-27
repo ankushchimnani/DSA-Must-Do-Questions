@@ -1,4 +1,4 @@
-# Sort an Array of 0s, 1s, or 2s - Editorial
+### Sort an Array of 0s, 1s, or 2s - Editorial
 
 ### Difficulty:  Easy
 
