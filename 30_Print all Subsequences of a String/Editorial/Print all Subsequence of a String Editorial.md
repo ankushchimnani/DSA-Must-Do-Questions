@@ -1,4 +1,4 @@
-# Print All Subsequence of a String - Editorial
+### Print All Subsequence of a String - Editorial
 
 ### Difficulty:  Easy
 
