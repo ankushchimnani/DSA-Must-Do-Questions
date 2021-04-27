@@ -35,7 +35,7 @@ Try looking for all non-negative contiguous segments of the array.
 * Note - The above appraoch is known as Kadane's algorithm.
 
 * Algorithm:
-
+  ```python
   Let MAX be the maximum sum of all subarray possible till A[i-1].
 
   1. CURR = CURR + A[i].
@@ -43,7 +43,7 @@ Try looking for all non-negative contiguous segments of the array.
   3. ELSE IF ( CURR < 0 ) then, CURR = 0.
   4. Return MAX.
 
-
+  ```
 * Example -
   ```python
   Let N = 8, A = [2, -3, 4, -1, -2, 1, 5, -3]
