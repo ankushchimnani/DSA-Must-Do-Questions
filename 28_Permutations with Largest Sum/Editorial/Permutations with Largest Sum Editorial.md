@@ -65,4 +65,4 @@ Nlog(N) is required to sort the array A.
 
 ### Alternate Solution:
 
-None
+If constraints are small, bitmasking can be employed to solve the problem.
