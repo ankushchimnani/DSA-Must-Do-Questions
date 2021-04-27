@@ -3,7 +3,7 @@
 ### Difficulty : Medium
 
 ### Pre-requisite : Recursion, DP
-
+---
 ### Hint :
 
 - Start matching each sequence, character by character. If char matches , then increase the count otherwise take max.
