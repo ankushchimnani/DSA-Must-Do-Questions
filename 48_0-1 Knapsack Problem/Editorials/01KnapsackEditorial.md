@@ -21,8 +21,10 @@ An item may or may not be part of the knapsack that has the greatest value.
   ```python
   Note - Base case: if N = 0 or W<=0 answer will be 0.
 
-	1.  ith item is included in the knapsack. This can happen only when Wi <= j. Hence the maximum value of knapsack we get after this event is: Vi + F( i+1, j-Wi ).
-        2.  ith item is not included in the knapsack. Hence the maximum value of knapsack we get after this event is: F( i+1, j ).
+   1.  ith item is included in the knapsack. This can happen only when Wi <= j. 
+       Hence the maximum value of knapsack we get after this event is: Vi + F( i+1, j-Wi ).
+       
+   2.  ith item is not included in the knapsack. Hence the maximum value of knapsack we get after this event is: F( i+1, j ).
        
   Hence F( i, j ) returns the maximum of the above two cases.
   ```
