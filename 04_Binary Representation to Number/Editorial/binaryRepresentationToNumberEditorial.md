@@ -1,9 +1,9 @@
-# Binary Representation to Number - Editorial
+### Binary Representation to Number - Editorial
 
 ### Difficulty:  Easy
 
 ### Prerequisite:  Maths, Bit manipulation.
-
+---
 ### Hint
 
 The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k). 
@@ -14,7 +14,8 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
 
 ### Detailed Explanation
 
-* Let there are k ( 0 <= k <= 32 ) set bits for a binary string B. Let x1, x2, x3, .... xk ( 0 <= x1, x2, x3, ..., xk <= 31) be the positions such that B[ x1 ] = B [ x2 ] = .... = B[ xk ] = 1. 
+* Let there are k ( 0 <= k <= 32 ) set bits for a binary string B. Let x1, x2, x3, .... xk ( 0 <= x1, x2, x3, ..., xk <= 31) be the positions such that 
+  B[ x1 ] = B [ x2 ] = .... = B[ xk ] = 1. 
   Note - All of x1, x2, x3,... , xk are pairwise distinct.
 
 * Decimal value of a given binary string B is equal to ΣB[ xi ]*2^(xi).
@@ -66,15 +67,11 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
   ```
 ### Time Complexity:
 
-`O(1)`.
-
-Maximum 32 iterations are required to calculate power of 2 as well as decimal value B.
+`O(1)`, Maximum 32 iterations are required to calculate power of 2 as well as decimal value B.
 
 ### Space Complexity:
 
-O(1).
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
