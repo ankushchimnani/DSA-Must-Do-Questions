@@ -1,9 +1,9 @@
-# Queue Using Two Stacks - Editorial
+### Queue Using Two Stacks - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Queues, Stacks.
-
+---
 ### Hint
 
 One stack can be used for enqueue operations, while the other one can be used for dequeue operations.
@@ -148,9 +148,7 @@ If stack S2 is empty, all elements of S1 is to be popped and pushed to stack S2.
 
 ### Space Complexity:
 
-`O(N)`.
-
-Two separated stacks and required for dequeue and enqueue operations.
+`O(N)`, Two separated stacks and required for dequeue and enqueue operations.
 
 ### Alternate Solution:
 
