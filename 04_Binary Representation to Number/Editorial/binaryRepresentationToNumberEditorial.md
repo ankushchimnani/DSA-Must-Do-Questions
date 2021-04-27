@@ -14,7 +14,8 @@ The decimal value for any bit k ( 0 <= k <= 31 ) is 2^(k).
 
 ### Detailed Explanation
 
-* Let there are k ( 0 <= k <= 32 ) set bits for a binary string B. Let x1, x2, x3, .... xk ( 0 <= x1, x2, x3, ..., xk <= 31) be the positions such that 
+* Let there are k ( 0 <= k <= 32 ) set bits for a binary string B. 
+  Let x1, x2, x3, .... xk ( 0 <= x1, x2, x3, ..., xk <= 31) be the positions such that 
   B[ x1 ] = B [ x2 ] = .... = B[ xk ] = 1. 
   Note - All of x1, x2, x3,... , xk are pairwise distinct.
 
