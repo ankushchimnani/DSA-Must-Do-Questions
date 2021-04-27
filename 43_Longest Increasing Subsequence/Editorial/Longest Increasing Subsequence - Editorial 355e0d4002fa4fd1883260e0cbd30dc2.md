@@ -1,10 +1,10 @@
-# Longest Increasing Subsequence - Editorial
+### Longest Increasing Subsequence - Editorial
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Pre-requisite : Recursion, DP
-
-## Hint :
+### Pre-requisite : Recursion, DP
+---
+### Hint :
 
 - Find all Increasing subsequence and then return the maximum length of longest increasing subsequence.
 
@@ -15,7 +15,7 @@
 - Exclude the current item from LIS and recur the remaining one.
 - Equation : **L(i) = 1 + max( L(j) ) where 0 < j < i and arr[j] < arr[i]**
 
-## Detail Explanation
+### Detail Explanation
 
 **Objective**
 
@@ -48,8 +48,6 @@ Explanation : The longest increasing subsequence is [2, 3, 7, 101]. Therefore th
 
     ![Longest%20Increasing%20Subsequence%20-%20Editorial%20355e0d4002fa4fd1883260e0cbd30dc2/LongestSubTree.jpg](Longest%20Increasing%20Subsequence%20-%20Editorial%20355e0d4002fa4fd1883260e0cbd30dc2/LongestSubTree.jpg)
 
-## Complexity Analysis of Backtracking
-
 ### Time Complexity
 
 - The recurrence relation Is : **T(n) ≤ 2T(n − 1) + O(1)**
@@ -59,7 +57,7 @@ Explanation : The longest increasing subsequence is [2, 3, 7, 101]. Therefore th
 
 - Space Complexity is **O(n)**
 
-## Approach 2 : Dynamic Programming
+### Approach 2 : Dynamic Programming
 
 - In this method, we believe that the longest increasing subsequence possible upto the ith index in a given array is independent of the element coming later on in the array.
 - If upto ith index , we know the length of longest Increasing Subsequence then we can find out the length of LIS possible by including the (i+1)th element.
@@ -67,8 +65,6 @@ Explanation : The longest increasing subsequence is [2, 3, 7, 101]. Therefore th
 - We will include the (i+1)th element depending upon the situation if its greater then the (i-1)th element.
 
     ![Longest%20Increasing%20Subsequence%20-%20Editorial%20355e0d4002fa4fd1883260e0cbd30dc2/LISEqn.png](Longest%20Increasing%20Subsequence%20-%20Editorial%20355e0d4002fa4fd1883260e0cbd30dc2/LISEqn.png)
-
-### Complexity Analysis
 
 ### Time and Space Complexity
 
