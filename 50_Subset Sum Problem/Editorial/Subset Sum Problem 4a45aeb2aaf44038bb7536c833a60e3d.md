@@ -1,10 +1,10 @@
-# Subset Sum Problem
+### Subset Sum Problem
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Pre-requisite : Recursion, DP
-
-## Hint :
+### Pre-requisite : Recursion, DP
+---
+### Hint :
 
 - Find out all subsets of n numbers and for every subset check if the subset sum is equal to the target number.
 
@@ -14,9 +14,9 @@
 - If include the current item then recur for the remaining items and similarly for exclude.
 - return true if we get the subset by including or excluding the current item.
 
-## Detail Explanation :
+### Detail Explanation :
 
-## 1. BackTracking
+### 1. BackTracking
 
 **Objective :**  Given a set of positive integers, and a value sum S, find out if there exist a subset in array whose sum is equal to given sum S.
 
@@ -37,8 +37,7 @@ Output : Yes, There exists a subset i.e [3, 2, 1]
 - Suppose Array = [ 3, 2, 7, 1] , Sum = 6
 
     Let's consider each element as xi i.e         [ 3,   2,   7,   1]
-
-                                                                       x1  x2  x3  x4
+                                                    x1   x2   x3  x4
 
 - For each element xi, We have two choices :
     1. xi is included
@@ -46,7 +45,7 @@ Output : Yes, There exists a subset i.e [3, 2, 1]
 
 ![Subset%20Sum%20Problem%204a45aeb2aaf44038bb7536c833a60e3d/SubsetSumBcktracking.jpg](Subset%20Sum%20Problem%204a45aeb2aaf44038bb7536c833a60e3d/SubsetSumBcktracking.jpg)
 
-### Time Complexity For Brute Force
+### Time Complexity
 
 - Since, The No. Of Elements are N i.e 4
     1. No. Of Levels = 5 (including root)
@@ -60,7 +59,7 @@ Output : Yes, There exists a subset i.e [3, 2, 1]
 
 Thus, **Time Complexity = O(2^N)**  Because we need to calculate 2^N paths
 
-### Space Complexity For Brute Force
+### Space Complexity 
 
 - As Space taken by recursive calls wil be O(N) in stack
 - Thus , **Space Complexity is O(N)**
@@ -75,7 +74,7 @@ Thus, **Time Complexity = O(2^N)**  Because we need to calculate 2^N paths
 
 ![Subset%20Sum%20Problem%204a45aeb2aaf44038bb7536c833a60e3d/code1.png](Subset%20Sum%20Problem%204a45aeb2aaf44038bb7536c833a60e3d/code1.png)
 
-## 2. Dynamic Programming
+### 2. Dynamic Programming
 
 1. To improve the time complexity, We need to minimize the recursive calls.
 2. Since we have many repetitive calls, We will use Dynamic Programming.
