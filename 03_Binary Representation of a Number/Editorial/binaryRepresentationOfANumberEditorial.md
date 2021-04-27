@@ -109,7 +109,7 @@
 
 ### Space Complexity:
 
-O(1), No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 
