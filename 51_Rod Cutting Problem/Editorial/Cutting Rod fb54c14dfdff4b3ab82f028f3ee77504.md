@@ -70,11 +70,13 @@ Ans : 2^n-1 , because there are n-1 places where we can choose to make cuts, and
 ### Time Complexity Of Brute Force
 
 - How many ways a cut can be made ?
+    ```python
     - For Rod of size N,
         1. 1 cut  ———> (n-1)C(1) ways
         2. 2 cuts ———> (n-2)C(2) ways
         3. k cuts ———> (n-k)C(k) ways
     - Total Sum = 1 cut ways + 2 cut ways +——+ k cut ways +—-+ (n-1) cut ways
+    ```
 - **The sum would be calculated as :**
 
     ![Cutting%20Rod%20fb54c14dfdff4b3ab82f028f3ee77504/time_rod.png](Cutting%20Rod%20fb54c14dfdff4b3ab82f028f3ee77504/time_rod.png)
