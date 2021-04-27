@@ -1,9 +1,9 @@
-# 0-1 Kanpsack - Editorial
+### 0-1 Kanpsack - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Recursion, DP.
-
+---
 ### Hint
 
 An item may or may not be part of the knapsack that has the greatest value.
