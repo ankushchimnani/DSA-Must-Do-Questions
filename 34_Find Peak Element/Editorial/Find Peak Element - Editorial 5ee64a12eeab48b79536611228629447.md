@@ -1,10 +1,10 @@
-# Find Peak Element - Editorial
+### Find Peak Element - Editorial
 
-## Difficulty : Low
+### Difficulty : Low
 
-## Pre-requisite : Binary Search
-
-## Hint :
+### Pre-requisite : Binary Search
+---
+### Hint :
 
 - Use Binary Search to find the peak.
 
@@ -13,9 +13,9 @@
 - Using Binary Search, Check whether the middle element is the peak element or not.
 - If middle is not peak and If right side or left side element is greater then there exist peak on that side .
 
-## Detail Explanation
+### Detail Explanation
 
-## Approach 1 : Linear Search
+### Approach 1 : Linear Search
 
 ### Algorithm :
 
@@ -24,7 +24,7 @@
     - Consider an array nums of size n.
     - Condition nums[i] > nums[i-1] and nums[i] > nums[i+1]
 
-## Complexity Analysis for Linear Search
+### Complexity Analysis for Linear Search
 
 ### 1. Time Complexity :
 
@@ -34,7 +34,7 @@ Time complexity is O(n) Because One traversal is needed.
 
 Space Complexity is O(n)
 
-## Approach 2 : Binary Search
+### Approach 2 : Binary Search
 
 ### Algorithm
 
@@ -44,16 +44,10 @@ Space Complexity is O(n)
 4. If the left side of the middle element is greater then find the peak on the left side.
 5. otherwise try to find on the right side.
 
-## Complexity Analysis for Binary Search
-
-### 1. Time Complexity :
+### Time Complexity :
 
 Time complexity is **O(Logn)** Because of binary search.
 
-### 2. Space Complexity :
+### Space Complexity :
 
-O(n), space required to take the input
-
-O(1), extra space required.
-
-Overall : O(n)
+O(1), no extra space required.
