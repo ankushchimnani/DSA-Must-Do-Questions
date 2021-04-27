@@ -18,11 +18,11 @@ A prime number N, is only divisible by 1 and itself. 2, 3, 5, 7, 11, 13, ... are
 - Observation :
     1. If N is divisible by X then, N is divisible by N/X also.
     2. If N is represented as a product of two numbers A and B, then 1 <= A,B <= sqrt(N).
-- Hence it is optimal to check for all X ( 1 <= X <= sqrt(N) ), whether N%X is equal to 0 or not. If for any X ( 1 <= X <= sqrt(N) ) N%X = 0, then N%(N/X) is also zero. Hence for a single X we get two factors of N, except for the case where both X and N/X are same.
+- Hence it is optimal to check for all X ( 1 <= X <= sqrt(N) ), whether N%X is equal to 0 or not. If for any X ( 1 <= X <= sqrt(N) ) N%X = 0, then N%(N/X) is also zero. Hence    for a single X we get two factors of N, except for the case where both X and N/X are same.
 
     If only for X = 1, N%X equals 0, for all X ( 1 <= X <= sqrt(N) ), then N is prime.
 
-Note - You can check for all X ( 1 <= X <= N ), whether N%X equals 0 or not and conclude whether N is prime or not. But it takes O(N) time complexity which is not desirable.
+  Note - You can check for all X ( 1 <= X <= N ), whether N%X equals 0 or not and conclude whether N is prime or not. But it takes O(N) time complexity which is not desirable.
 
 - Pseudo code:
 
