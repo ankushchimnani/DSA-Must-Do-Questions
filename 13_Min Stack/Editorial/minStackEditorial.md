@@ -128,8 +128,7 @@ If A < B then 2A - B < A.
 
 ### Time Complexity:
 
-`O(1)`.
-
+`O(1)`, for each operation
 
 ### Space Complexity:
 
