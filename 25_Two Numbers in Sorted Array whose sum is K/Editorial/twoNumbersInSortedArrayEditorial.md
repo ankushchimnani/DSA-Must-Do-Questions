@@ -27,12 +27,14 @@ function twoElementsWithSumK(array, K)
 ```
 ### **Example**
 ```python
-Array = [2,7,11,15], and the value of K = 9. So, we have a pointer iterating from left to right, while another pointer iterates, from right to left. 
+Array = [2,7,11,15], and the value of K = 9. So, we have a pointer iterating from left to right, 
+while another pointer iterates, from right to left. 
 So, initally, the value of left = 0 and right = arr.length - 1.
 	
 Initially, when left = 0, and right = 3, then sum = array[left] + array[right], which is equal to 17. 
 Since, this sum is greater than K = 9, we decrement the right pointer, such that, right = 2. 
-Now, again the sum of values at left and right index is 13, which is again greater than K, so we again decrement the right pointer, so that right becomes 1. 
+Now, again the sum of values at left and right index is 13, which is again greater than K, 
+so we again decrement the right pointer, so that right becomes 1. 
 Now, the sum of the values at the left and the right index becomes equal to K = 9, so we return the indexes of left and right.
 ```
 
