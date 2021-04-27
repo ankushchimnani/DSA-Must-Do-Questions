@@ -14,17 +14,19 @@ A palindrome is a word,phrase, or other sequence of characters which reads the s
 Another method, involved the use of two pointers, where one pointers explore the string from the end, while other explores the string from the beginning, until they meet. If, at any point the character at a particular position from the end and the start are not same, then the string is said to be not a palindrome, else it is said to be a palindrome.
 
 ### **Pseudo Code**
-	* function checkPalindrome(String str)
-		* left = 0 
-		* right = str.length()-1;
-		* while(left <= right)
-			* if (str.charAt(left) != str.charAt(right)) return false
-			* left++
-			* right--
-		* return true
+```python
+
+function checkPalindrome(String str)
+	left = 0 
+	right = str.length()-1;
+	while(left <= right)
+		if (str.charAt(left) != str.charAt(right)) return false
+		left++
+		right--
+	return true
 
 
-
+```
 ### **Time Complexity**:
 The time complexity will be O(N), where N is the length of the string.
 
