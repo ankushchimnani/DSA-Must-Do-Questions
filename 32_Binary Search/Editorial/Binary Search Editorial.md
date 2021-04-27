@@ -1,10 +1,10 @@
-# Binary Search
+### Binary Search
 
-## Difficulty : Easy
+### Difficulty : Easy
 
-## Pre-requisite : arrays
-
-## Hint :
+### Pre-requisite : arrays
+---
+### Hint :
 
 - In a sorted array, compares the target element with the middle element of the array.
 
@@ -13,15 +13,15 @@
 - Search a sorted array by repeatedly dividing the search interval in half.
 - Move to lower half if search key is less than the middle element otherwise to other half.
 
-## Detail Explanation
+### Detail Explanation
 
-## 1. Brute Force
+### 1. Brute Force
 
 - Searching an element in an array .
 - Basic approach is Linear Search.
 - The time complexity will be O(N)
 
-## 2. Binary Search
+### 2. Binary Search
 
 - Given an array of n elements A0, A1, A2.....An-1 such that A0 ≤ A1 ≤ A2.....≤An-1 and target key k.
 - Set left to 0 and R to n-1.
@@ -63,8 +63,5 @@ In every step of binary search,
 - This will result in worst Case Time Complexity : O(logn)
 
 ### Space Complexity
-`O(n)` , space required to take input.
 
-`O(1)` , extra space required.
-
- Overall : `O(n)`.
+`O(1)` , no extra space required.
