@@ -47,7 +47,7 @@ For **fib(6)** :
 
 - we will use the n size array to store the sub-problems result.
 
-### Code
+### Pseudo Code
 
 ![Nth%20Fibonacci%20-%20Editorial%206b42f65168a44ba3a8f845ded117ae09/fib_code.png](Nth%20Fibonacci%20-%20Editorial%206b42f65168a44ba3a8f845ded117ae09/fib_code.png)
 
