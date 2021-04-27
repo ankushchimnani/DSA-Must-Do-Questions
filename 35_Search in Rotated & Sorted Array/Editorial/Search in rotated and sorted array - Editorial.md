@@ -23,11 +23,11 @@ In this question we would essentially apply a modified version of binary search 
 * As individual sub-arrays are sorted. Thus, the element can be searched using Binary Search.
 
 ### **Time Complexity**:
-Same as Binary Search  O(logN)
+`O(logN)`, where N is the size of array.
 
 ### **Space Complexity**:
 
-O(1), no extra space required.
+`O(1)`, no extra space required.
 
 ### **Alternate Solution**:
 Linear Search will result in TLE for some cases.
