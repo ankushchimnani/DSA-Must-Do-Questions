@@ -1,9 +1,9 @@
-# FizzBuzz - Editorial
+### FizzBuzz - Editorial
 
 ### Difficulty: Easy
 
 ### Prerequisite: Maths.
-
+---
 ### Hint
 
 Check multiples of 3, 5 and 15.
