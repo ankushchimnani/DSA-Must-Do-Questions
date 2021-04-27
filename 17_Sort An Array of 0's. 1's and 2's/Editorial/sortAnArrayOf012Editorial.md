@@ -83,7 +83,7 @@ Entire array needs to be traversed only once to count the required occurrences o
 
 ### Space Complexity:
 
-`O(1)`, No extra space is required.
+`O(1)`, constant extra space is required.
 
 ### Alternate Solution:
 
