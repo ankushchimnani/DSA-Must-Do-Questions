@@ -108,11 +108,11 @@ Return Root i.e. 10 . It is floor(sqrt(110))
 #### Recurrence : T(n) = T(n/2) + c
 * In every step of binary search,
     * We used to recur either left half or right half .
-    * This will result in worst Case Time Complexity : O(logn)
+    * This will result in worst Case Time Complexity : `O(logn)`
 
 ### **Space Complexity**:
 * No extra memory is needed
-* Space : O(1)
+* Space : `O(1)`
 
 ### **Alternate Solution**:
 Linear Search will result in TLE for some cases.
