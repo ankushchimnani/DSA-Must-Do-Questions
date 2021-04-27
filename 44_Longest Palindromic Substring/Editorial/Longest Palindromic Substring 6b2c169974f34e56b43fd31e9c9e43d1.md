@@ -1,10 +1,10 @@
-# Longest Palindromic Substring
+### Longest Palindromic Substring
 
-## Difficulty : Medium
+### Difficulty : Medium
 
-## Pre-requisite : Recursion, DP, Loops
-
-## Hint :
+### Pre-requisite : Recursion, DP, Loops
+---
+### Hint :
 
 - For any string to be a palindrome , From the mid character the left side should be equal to right side.
 
@@ -14,9 +14,9 @@
 - Expand it in both directions to find the maximum length palindrome.
 - For an even length palindrome, consider every adjacent pair of characters as the mid-point.
 
-## Detail Explanation
+### Detail Explanation
 
-## Approach 1 : Brute Force
+### Approach 1 : Brute Force
 
 **Objective**
 
@@ -113,8 +113,5 @@ We define L(i, j) as
 
 ### Space Complexity
 
-O(n), space required to take the input.
+O(1), no extra space required.
 
-O(1), extra space required.
-
-Overall : O(n).
