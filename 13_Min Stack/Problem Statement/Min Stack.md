@@ -27,7 +27,7 @@ getMin() — Retrieve the minimum element in the stack in O(1) time
 #### **Expected Time Complexity**
 __O__(1), for each operation
 #### **Expected Space Complexity**
-__O__(N), where N is the size of the stack
+__O__(1), Constant extra space
 
 #### **Constraints**
 	1 <= N <= 100000
