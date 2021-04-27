@@ -26,29 +26,27 @@ The first cycle, consists of elements `1 2 3 6 9 8 7 4` , and after moving them 
 
 
 ### *Pseudo Code*
-	* function rotateMatrix(int[][] matrix)
-	* int n = matrix.length
-	* for (int i=0;i<n/2;i++)
-		* for (int j=i;j<n-i-1;j++)
-			* int temp = matrix[i][j]
-			* matrix[i][j] = matrix[j][n-i-1]
-			* matrix[j][n-i-1] = matrix[n-i-1][n-j-1]
-			* matrix[n-i-1][n-j-1] = matrix[n-j-1][i];
-			* matrix[n-j-1][i] = temp
-	* return matrix
+```python
 
+	function rotateMatrix(int[][] matrix)
+	int n = matrix.length
+	for (int i=0;i<n/2;i++)
+		for (int j=i;j<n-i-1;j++)
+			int temp = matrix[i][j]
+			matrix[i][j] = matrix[j][n-i-1]
+			matrix[j][n-i-1] = matrix[n-i-1][n-j-1]
+			matrix[n-i-1][n-j-1] = matrix[n-j-1][i];
+			matrix[n-j-1][i] = temp
+	return matrix
 
+```
 ### Time Complexity:
 
 `O(n*n)` where n is the size of the matrix, as a single traversal of the matrix is needed.
 
 ### Space Complexity:
 
-`O(n*n)`, space required for taking the input.
-
-`O(1)`, required extra space.
-
-Overall : `O(n*n)`.
+`O(1)`, no extra space required.
 
 ## Alternate Solution:
 A solution that requires extra space has been mentioned in the detailed explanation
