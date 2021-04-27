@@ -129,11 +129,8 @@ Any character of string get pushed or popped at most once into the stack while i
 
 ### Space Complexity:
 
-`O(N)`.
+`O(N)`, All the N characters of string can reside inside the stack.
 
-All the N characters of string can reside inside the stack.
-
-No extra space is required.
 
 ### Alternate Solution:
 
