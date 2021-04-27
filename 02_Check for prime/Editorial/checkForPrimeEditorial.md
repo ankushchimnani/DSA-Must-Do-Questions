@@ -1,9 +1,9 @@
-# Detect if a number is prime - Editorial
+### Detect if a number is prime - Editorial
 
 ### Difficulty: Easy
 
 ### Prerequisite: Maths.
-
+---
 ### Hint
 
 A prime number N, is only divisible by 1 and itself. 2, 3, 5, 7, 11, 13, ... are first few prime numbers.
