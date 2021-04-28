@@ -21,7 +21,7 @@ The lists needs to be traversed only once.
 
 
 #### **Expected Space Complexity**
-__O__(m + n). A temporary linked list is needed to store the output number
+__O__(k), where k is the number of digits.
 
 #### **Constraints**
 	The number of nodes in each linked list is in the range [1, 100].

@@ -29,10 +29,10 @@ A slight optimization to the bubble sort algorithm can be, that if the count of 
 	print arr 
 ```
 ### **Time Complexity**:
-The time complexity will be O(N^2) as there are two nested loops.
+The time complexity will be `O(N^2)` as there are two nested loops.
 
 ### **Space Complexity**:
-The swapping takes place in place, therefore the space complexity will be O(1).
+The swapping takes place in place, therefore the space complexity will be `O(1)`.
 
 ### **Alternate Solution**:
 None.

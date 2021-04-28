@@ -27,7 +27,7 @@ A Query Q is of 2 Types
 __O__(1) for push() and __O__(N) for pop() or __O__(N) for push() and __O__(1) for pop()  
 
 #### **Expected Space Complexity**
-__O__(1), Auxilliary Space  
+__O__(N), auxilliary space required for to store data in stacks. 
 
 #### **Constraints**
 	 1 <= Q <= 100

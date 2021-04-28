@@ -39,7 +39,7 @@ The postfix expression for the expression given in the sample input is given by 
 __O__(N^2), where N is the size of the expression.
 
 #### **Expected Space Complexity**
-__O__(N),Auxilliary Space  
+__O__(M), where M is the number of operators in string. 
 
 #### **Constraints**
 	  Number of operands <= 26

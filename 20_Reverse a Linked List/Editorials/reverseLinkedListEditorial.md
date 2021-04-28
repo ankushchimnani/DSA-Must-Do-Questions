@@ -54,11 +54,8 @@ Finally, the value of head is updated to before, after the value of current beco
 
 ### Space Complexity:
 
-`O(n)`, space required for taking the input.
-
 `O(1)` for each operation, as no extra space is required.
 
-Overall : `O(n)`
 
 ## Alternate Solution:
 None.
