@@ -37,7 +37,39 @@ So the sequence looks like this across time,
 No No No No No No No No .. .. No Yes Yes Yes .. Yes
 
 We need to find the time of that first Yes which can be implemented using binary search since the function is monotonic in nature.
+
 ```
+### **Pseudo code:**
+
+* numberOfPainters(arr, n, Len) : To find minimum required painters to paint maximum allowed length Len for each painter
+  ```python
+    Begin
+        total = 0
+        numPainters = 1
+        for i in arr
+            total += i
+            if (total > Len)
+                total = i
+                numPainters += 1
+        return numPainters
+    End
+  ```   
+* Partition Function
+    ```python
+    Begin
+        lo = max(arr)
+        hi = sum(arr)
+        while (lo < hi)
+            mid = lo + (hi - lo) / 2
+            requiredPainters = numberOfPainters(arr, n, mid)
+            if (requiredPainters <= k)
+                hi = mid
+            else:
+                lo = mid + 1
+        return lo
+    End
+  ```   
+
 
 ### **Time Complexity**:
 `O(n * log(sum of the lenghts))` ~ `O(n*log(n))` per testcase.

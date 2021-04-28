@@ -24,7 +24,38 @@ We are going to use index of elements in dequeue instead of the array elements.
     * Append the current element to the dequeue
     * Output the dequeue[0] at the end of each window processing, as it is the maximum value
 
+### **Pseudo code:**
 
+* Sliding Window Maximum using Dequeue
+  ```python
+    Begin
+        q = Dequeue()   
+        ans = []
+        // First K elements
+        for( i = 0 to k-1)
+        {
+            while(!q.empty() and  arr[i] >= arr[q.back()])
+            {
+                q.pop_back()
+            }    
+            q.push_back(i)
+        }
+        ans.append(arr[q.front()])
+
+        // For rest elements
+        for(i = k to n-1)
+        {
+                while(!q.empty() and q.front() <= i-k)
+                    q.pop_front()
+                
+                while(!q.empty() and arr[i] >= arr[q.back()])
+                    q.pop_back()    
+                q.push_back(i)
+                ans.append(arr[q.front()])
+        }   
+        return ans
+    End
+  ```  
 
 ### Time Complexity:
 

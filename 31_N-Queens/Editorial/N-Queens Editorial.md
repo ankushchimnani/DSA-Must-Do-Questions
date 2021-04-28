@@ -21,13 +21,45 @@ Place queens one by one in different columns and check for the possibility of at
 
 * If the number of queens to be placed becomes 0, then it's over, we found a solution. But if the number of un-attacked cells become 0, then we need to backtrack, i.e. remove the last placed queen from its current cell, and place it at some other cell. We do this recursively.
 
+
+### **Pseudo code:**
+
+* isValid function to check whether it's possible to place the Queen at that particular place or not
+  ```python
+    Begin
+        if there is a queen at the left of current col, then
+            return false
+        if there is a queen at the left upper diagonal, then
+            return false
+        if there is a queen at the left lower diagonal, then
+            return false;
+        return true //otherwise it is valid place
+    End
+  ```   
+* N-Queens Function
+    ```python
+    Begin
+        if all columns are filled, then
+            return true
+        for each row of the board, do
+            if isValid(board, i, col), then
+                set queen at place (i, col) in the board
+                if solveNQueen(board, col+1) = true, then
+                    return true
+                otherwise remove queen from place (i, col) from board.
+        done
+        return false
+    End
+  ```   
+
+
 ### Time Complexity:
 
-`O(2^N)`, where `N` is the number of Queens to be placed
+`O(N!)`, where `N` is the number of Queens to be placed
 
 ### Space Complexity:
 
-`O(N*N)`, where `N` is the number of Queens to be placed
+`O(N)`, where `N` is the number of Queens to be placed
 
 ### Alternate Solution:
 
