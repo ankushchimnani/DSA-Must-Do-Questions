@@ -82,7 +82,7 @@ It will take maximum of `sqrt(N)` iteration to check whether N is prime or not.
 
 ### Space Complexity:
 
-O(1).
+`O(1)`.
 
 No extra space is required.
 

@@ -25,7 +25,7 @@ Implement a Stack using two queues q1 and q2 such that the stack supports two op
 #### **Expected Time Complexity**
 __O__(1) for push() and __O__(N) for pop() (or vice-versa).
 #### **Expected Space Complexity**
-__O__(1),Auxilliary Space  
+__O__(N), auxilliary Space required for storing data in queues. 
 
 #### **Constraints**
 	 1 <= Number of operations on the stack <= 100

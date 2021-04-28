@@ -28,10 +28,10 @@ function checkPalindrome(String str)
 
 ```
 ### **Time Complexity**:
-The time complexity will be O(N), where N is the length of the string.
+The time complexity will be `O(N)`, where N is the length of the string.
 
 ### **Space Complexity**:
-No extra space is required. Therefore, the space complexity will be O(1).
+No extra space is required. Therefore, the space complexity will be `O(1)`.
 
 ### **Alternate Solution**:
 Already mentioned in the detailed solution.
