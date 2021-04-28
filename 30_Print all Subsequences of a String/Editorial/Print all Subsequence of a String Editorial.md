@@ -3,7 +3,7 @@
 ### Difficulty:  Easy
 
 ### Prerequisite:  Recursion, Backtracking
-
+---
 ### Hint
 
 We either pick an element of the string or we don't pick it, and then form the subsequence

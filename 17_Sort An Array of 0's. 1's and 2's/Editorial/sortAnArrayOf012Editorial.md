@@ -3,6 +3,7 @@
 ### Difficulty:  Easy
 
 ### Prerequisite:  Hashing.
+---
 
 ### Hint
 
