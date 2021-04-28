@@ -1,4 +1,4 @@
-# Print All Subsequence of a String - Editorial
+### Print All Subsequence of a String - Editorial
 
 ### Difficulty:  Easy
 
@@ -17,9 +17,9 @@ Subsequence of a string is formed by deleting some character of a given string w
 
 In every backtracking problem , there are two things to keep in mind :
 
-    * Base Case : Every problem of backtracking has some base case which tells us at which point we have to stop with the recursion process. In our case, when the input string becomes empty we stop our recursion and print the output string.
+* Base Case : Every problem of backtracking has some base case which tells us at which point we have to stop with the recursion process. In our case, when the input string becomes empty we stop our recursion and print the output string.
 
-    * Condition : We need to consider both the possiblity of either picking an element or not picking an element.
+* Condition : We need to consider both the possiblity of either picking an element or not picking an element.
 
 * In one recursive call, the output string is passed in the recursive function by including the first character of the input string.
 

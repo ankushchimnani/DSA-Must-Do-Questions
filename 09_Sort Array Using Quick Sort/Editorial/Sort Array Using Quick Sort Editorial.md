@@ -1,9 +1,9 @@
-# Quick Sort - Editorial
+### Quick Sort - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite: Recursion, Divide and Conquer
-
+---
 ### Hint
 
 * Quick sort is based on the divide-and-conquer method based on the idea of choosing one element as a pivot element and partitioning the array around it such that: Left side of pivot contains all the elements that are less than the pivot element Right side contains all elements greater than the pivot.
@@ -25,7 +25,7 @@
 
 * Partition Example
 
-```
+```python
 arr[] = {1, 8, 3, 9, 4, 5, 7}
 Indexes:  0   1   2   3   4   5   6 
 

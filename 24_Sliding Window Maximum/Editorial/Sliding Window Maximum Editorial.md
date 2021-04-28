@@ -1,9 +1,9 @@
-# Sliding Window Maximum - Editorial
+### Sliding Window Maximum - Editorial
 
 ### Difficulty:  Hard
 
 ### Prerequisite: Dequeue, Heap, Sliding Window
-
+---
 ### Hint
 
 * We can use heap to add element into the heap and in a maximum heap the largest element is always at heap[0], but to add a element in heap of size "k" will take log(k) time, to do it in O(n) time, can we use a window to process "k" elements, something like Dequeue.
@@ -28,7 +28,7 @@ We are going to use index of elements in dequeue instead of the array elements.
 
 ### Time Complexity:
 
-`O(n)`, where `N` is the size of array
+`O(n)`, where `n` is the size of array
 
 ### Space Complexity:
 

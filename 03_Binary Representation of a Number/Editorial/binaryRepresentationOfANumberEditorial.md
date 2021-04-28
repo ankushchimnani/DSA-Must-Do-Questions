@@ -1,9 +1,9 @@
-# Binary representation of a number - Editorial
+### Binary representation of a number - Editorial
 
 ### Difficulty: Easy
 
 ### Prerequisite: Maths, Bit manipulation.
-
+---
 ### Hint
 
 - A binary representation of any non-negative number N consists of only 0's and 1's.
@@ -14,7 +14,7 @@
 
 ### Detailed Explanation
 
-- For any non-negative number N, the kth bit ( 0 <= k < 32 ) is set or 1, if the value of N&(2^(k)) is 2^(k) (& is bitwise AND operator").
+- For any non-negative number N, the kth bit ( 0 <= k < 32 ) is set or 1, if the value of N&(2^(k)) is 2^(k) (& is bitwise AND operator).
 
     Hence, to have binary representation of N, we can check the values of all k bits ( 0 <= k < 32 ) one by one. If it is set, then, the kth bit in binary representation of N holds value 1. Else it holds value 0.
 
@@ -105,15 +105,11 @@
     ```
 ### Time Complexity:
 
-`O(1)`.
-
-Maximum of 32 bits needs to be checked for.
+`O(1)`, Maximum of 32 bits needs to be checked for.
 
 ### Space Complexity:
 
-O(1).
-
-No extra space is required.
+`O(1)`, No extra space is required.
 
 ### Alternate Solution:
 

@@ -1,9 +1,9 @@
-# Print All Permutations of an Array - Editorial
+### Print All Permutations of an Array - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Recursion, Backtracking
-
+---
 ### Hint
 
 We are asked to calculate all the possible permutations, so we may think of using Backtracking as we need to accept the cases which satisfy the condition and reject the others, also all the integers are distinct

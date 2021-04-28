@@ -1,9 +1,9 @@
-# Nearest smaller element - Editorial
+### Nearest smaller element - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Stacks.
-
+---
 ### Hint
 
 For an array A of length N, if A[k] > A[j] and A[k] > A[i] ( 1 <= i < j < k <= N ) , then A[j] is a better answer for A[k] than A[i] . 
@@ -115,7 +115,7 @@ Each element of array A gets pushed and popped from the stack at most once.
 
 ### Space Complexity:
 
-`O(N)`,At most N elements can be there inside the stack.
+`O(N)`, At most N elements can be there inside the stack.
 
 ### Alternate Solution:
 

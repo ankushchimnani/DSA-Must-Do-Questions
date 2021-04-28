@@ -1,9 +1,9 @@
-# Stack using two queues - Editorial
+### Stack using two queues - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Stacks, Queues.
-
+---
 ### Hint
 
 

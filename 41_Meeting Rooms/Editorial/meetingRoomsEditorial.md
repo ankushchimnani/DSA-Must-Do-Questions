@@ -1,9 +1,9 @@
-# Meeting rooms - Editorial
+### Meeting rooms - Editorial
 
 ### Difficulty: Easy
 
 ### Prerequisite:  Greedy, Sorting.
-
+---
 ### Hint
 
 Check for rooms with overlapping intervals. 

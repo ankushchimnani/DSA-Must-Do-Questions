@@ -1,9 +1,9 @@
-# Gas stations - Editorial
+### Gas stations - Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite:  Greedy.
-
+---
 ### Hint
 
 Try each station X, ( 1 <= X <= N ) as the starting station.

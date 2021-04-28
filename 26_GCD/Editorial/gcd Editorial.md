@@ -1,9 +1,9 @@
-# GCD- Editorial
+### GCD- Editorial
 
 ### Difficulty:  Medium
 
 ### Prerequisite: Recursion, Modulo Operation
-
+---
 ### Hint
 
 * To get GCD of two numbers think about subtracting smaller one from the larger number to get the a number which divides both of them.

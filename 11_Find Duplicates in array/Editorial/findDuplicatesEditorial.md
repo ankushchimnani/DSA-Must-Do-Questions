@@ -18,15 +18,16 @@ For example, given an array `A = [1,3,3,2,4]` has 5 elements. Therefore, the sum
 
 
 ### *Pseudo Code*
-	* function findDuplicates(int[] array)
-	* S1 = 0
-	* for (int i=0;i<array.length;i++) 
-		* S1 += array[i]
-	* n = array.length - 1
-	* S2 = [n * (n + 1)]/2
-	* int ans = S1 - S2
-	* return ans
-
+```python
+	function findDuplicates(int[] array)
+	S1 = 0
+	for (int i=0;i<array.length;i++) 
+		S1 += array[i]
+	n = array.length - 1
+	S2 = [n * (n + 1)]/2
+	int ans = S1 - S2
+	return ans
+```
 
 ### Time Complexity:
 
@@ -34,11 +35,8 @@ For example, given an array `A = [1,3,3,2,4]` has 5 elements. Therefore, the sum
 
 ### Space Complexity:
 
-`O(N)` - space required to take the input.
+`O(1)` - No extra space required.
 
-`O(1)` - required extra space.
-
-Overall : `O(N)`.
 
 ## Alternate Solution:
 A brute force has been mentioned in the detailed explanation

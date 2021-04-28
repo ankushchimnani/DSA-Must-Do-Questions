@@ -16,21 +16,21 @@ For Example, given a string A = "naman" and a string B = "manan". After sorting 
 
 
 ### **Pseudo Code**
-		* String a //input string 
-		* String b //input string
-		* String a_sorted = Sort(a) //string after removing spaces and sorting the characters
-		* String b_sorted = Sort(a) //string after removing spaces and sorting the characters
-		* if (a_sorted == b_sorted) return "true"
-		* else return "false"
+```python
+	String a //input string 
+	String b //input string
+	String a_sorted = Sort(a) //string after removing spaces and sorting the characters
+	String b_sorted = Sort(a) //string after removing spaces and sorting the characters
+	if (a_sorted == b_sorted) return "true"
+        else return "false"
 	 
-
+```
 ### **Time Complexity**:
 In the best case, sorting requires __`O(NlogN)`__, where N is the number of characters in the string. Therefore, the time complexity will be __`O(NlogN)`__.
 
 ### **Space Complexity**:
 
-No extra space will be required, only spaces will be removed from the original strings. 
-Overall space complexity will be __`O(N)`__, where N is the size of string.
+`O(1)`, No extra space will be required.
 
 ### **Alternate Solution**:
 Instead of using sorting, we can use arrays/Key-Value Pairs to compare the frequency of characters in both the strings.

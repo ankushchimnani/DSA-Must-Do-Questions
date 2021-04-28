@@ -1,9 +1,9 @@
-# Best time to buy and sell stocks - Editorial
+### Best time to buy and sell stocks - Editorial
 
 ### Difficulty:  Easy
 
 ### Prerequisite:  Dynamic programming.
-
+---
 ### Hint
 
 Try maximising the difference between prices of two days. 
@@ -16,7 +16,7 @@ Try maximising the difference between prices of two days.
 
 * Let there be N days to buy and sell stocks with prices[N] denoting the cost of stocks for all of N days.
 
-* One possible solution is to calculate the profit obtained for all pairs of days i, j ( 1 <= i < j <= N ) and to take out the maximum among them. This will lead to a time complexity of O(N*N) which is not desirable.
+* One possible solution is to calculate the profit obtained for all pairs of days i, j ( 1 <= i < j <= N ) and to take out the maximum among them. This will lead to a time complexity of O(NxN) which is not desirable.
 * Observation:
   1. If on ith day ( 1 <= i <= N ) a stock is bought, then for it to be sold on jth day, i < j <= N.
   2. Let a stock is bought on day i ( 1<= i <= N) with cost prices[i]. Let the cost of stock on days j and k ( i < j < k ) be prices[j] and prices[k], with the condition that prices[i] < prices[j] < prices[k], then, it is better to sell the stock bought on day i on day k than day j.

@@ -14,47 +14,58 @@ Another approach, that uses the fact that the array is sorted. So, we can find o
 For example, if the array given is, `array = [1,2,3,4,4,4,7]` and the value of `k = 4`. Then, the frequency can be calculated as,
 `lowerbound = 3` and `upperbound = 5`. Therefore, the frequency of the given element is K = 4 is `5 - 3 + 1 = 3`, based on the formula given above. 
 To find out the upperbound and lowerbound of the array, binary search is to be used.
+
 ### **Pseudo Code**
-	* function lowerbound(int[] array, int k) //This function finds out the lowerbound of K
-		* low = 0, high = array.length - 1
-		* ans = -1 //if the value of lowerbound is -1, indicating that the element is not present.
-		* while (low <= high)
-			* mid = low + (high - low)/2
-			* if (array[mid] == k)
-				* ans = mid
-				* high = mid - 1
-			* else if (array[mid] > k)
-				* high = mid - 1
-			* else 
-				* low = mid + 1
-		* return ans
-	* function upperbound(int[] array, int k) //This function finds out the upperbound of K
-		* low = 0, high = array.length - 1
-		* ans = -1 //if the value of lowerbound is -1, indicating that the element is not present.
-		* while (low <= high)
-			* mid = low + (high - low)/2
-			* if (array[mid] == k)
-				* ans = mid
-				* low = mid + 1
-			* else if (array[mid] > k)
-				* high = mid - 1
-			* else 
-				* low = mid + 1
-		* return ans
-	* function frequencyInSortedArray(int[] array, int k) //
-		* lowerbound = lowerbound(array,k)
-		* upperbound = upperbound(array,k)
-		* if (lowerbound == -1) //indicating that the element is not present
-			* return 0
-		* int ans = upperbound - lowerbound + 1
-		* return ans
+```python
+	function lowerbound(int[] array, int k) //This function finds out the lowerbound of K
+		low = 0, high = array.length - 1
+		ans = -1 //if the value of lowerbound is -1, indicating that the element is not present.
+		while (low <= high)
+			mid = low + (high - low)/2
+			if (array[mid] == k)
+				ans = mid
+				high = mid - 1
+			else if (array[mid] > k)
+				high = mid - 1
+			else 
+				low = mid + 1
+		return ans
+	function upperbound(int[] array, int k) //This function finds out the upperbound of K
+		low = 0, high = array.length - 1
+		ans = -1 //if the value of lowerbound is -1, indicating that the element is not present.
+		while (low <= high)
+			mid = low + (high - low)/2
+			if (array[mid] == k)
+				ans = mid
+				low = mid + 1
+			else if (array[mid] > k)
+				high = mid - 1
+			else 
+				low = mid + 1
+		return ans
+	function frequencyInSortedArray(int[] array, int k) //
+		lowerbound = lowerbound(array,k)
+		upperbound = upperbound(array,k)
+		if (lowerbound == -1) //indicating that the element is not present
+			return 0
+		int ans = upperbound - lowerbound + 1
+		return ans
+```
+### Example
+```python
+
+Given, `array = [1,2,3,4,4,4,7]` and the value of `k = 4`. Then, the frequency can be calculated as,
+`lowerbound = 3` and `upperbound = 5`. 
+Therefore, the frequency of the given element is K = 4 is `5 - 3 + 1 = 3`, based on the formula given above. 
+
+```
+
 ### **Time Complexity**:
-The time complexity will be O(log(N)), where N is the size of the array.
+The time complexity will be `O(log(N))`, where N is the size of the array.
+
 ### **Space Complexity**:
-O(N), space required to take the input.
 
-O(1), extra space required.
+`O(1)`, no extra spce required.
 
-Overall : O(N).
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
