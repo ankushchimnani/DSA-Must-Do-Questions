@@ -1,7 +1,7 @@
 ### **Detect Loop in a Linked List - Editorial**
 ### **Difficulty: Medium**
 ### **Prerequisite: Maths, Linked List**
-
+---
 ### **Hint**:
 Use two pointer approach.
 

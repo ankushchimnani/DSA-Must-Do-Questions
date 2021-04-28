@@ -1,5 +1,7 @@
 ### **Check for Anagram! - Editorial**
+
 ### **Difficulty**: Low
+
 ### **Prerequisite: Strings,Sorting**
 ---
 
