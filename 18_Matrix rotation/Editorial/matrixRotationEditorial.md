@@ -10,7 +10,7 @@ In this question, we have been asked to rotate a given square matrix, by 90 degr
 
 ### **Detailed Explanation**:
 In this question, we are expected to rotate the square matrix, in anticlockwise direction by 90 degrees. A solution that requires extra space is trivial, and basically involves, converting the last column into the first row, the second last column into the second row, and so on.
-A solution that requires no extra space can be thought of, by viusalizing the matrix in the form of squares, and rotating the matrix simulataneously. A matrix of dimension N X N, will have N/2(flooe value)squares. 
+A solution that requires no extra space can be thought of, by viusalizing the matrix in the form of squares, and rotating the matrix simulataneously. A matrix of dimension N X N, will have N/2(floor value)squares. 
 For example, if the given matrix is 
 
 	   1 2 3
