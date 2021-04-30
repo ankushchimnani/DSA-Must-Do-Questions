@@ -65,7 +65,7 @@ The time complexity will be `O(log(N))`, where N is the size of the array.
 
 ### **Space Complexity**:
 
-`O(1)`, no extra spce required.
+`O(1)`, no extra space required.
 
 ### **Alternate Solution**:
 A brute force solution has been discussed in the detailed explanation.
