@@ -11,7 +11,7 @@ Check whether two given strings X and Y of sizes N and M respectively are anagra
 All the characters of string "abcd" is present in "dacb" and in same frequencies. Hence both are anagram of each other.
 
 #### **Expected Time Complexity**
-__O__(N+M), where N and M is the sizes of the given strings
+__O__(NLog(N)), where N is the lenght of the given string
 
 #### **Expected Space Complexity**
 __O__(1), i.e., constant space complexity.
